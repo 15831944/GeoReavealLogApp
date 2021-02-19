@@ -1,0 +1,12 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by PrePlot.rc
+//
+#define HIDCANCEL                       0x80990002    // IDD_PAGE_SETUP
+#define HIDC_BOTTOM_SPACE               0x8099045a    // IDD_PAGE_SETUP
+#define HIDC_LEFT_SPACE                 0x80990456    // IDD_PAGE_SETUP
+#define HIDC_PAGE_WIDTH                 0x8099045b    // IDD_PAGE_SETUP
+#define HIDC_REVISEDEP_OK               0x80ae04f5    // IDD_CURVE_DEP
+#define HIDC_RIGHT_SPACE                0x80990458    // IDD_PAGE_SETUP
+#define HIDC_STATIC_LEFT_SPACE          0x809904d3    // IDD_PAGE_SETUP
+#define HIDC_TOP_SPACE                  0x80990459    // IDD_PAGE_SETUP
+#define HIDOK                           0x80dc0001    // IDD_PAGE_SETUP

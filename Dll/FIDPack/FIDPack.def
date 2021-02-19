@@ -1,0 +1,7 @@
+; FIDPack.def : Declares the module parameters for the DLL.
+
+LIBRARY      "FIDPackNet"
+DESCRIPTION  'FIDPackNet Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

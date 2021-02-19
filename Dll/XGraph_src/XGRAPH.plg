@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: XGRAPH - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x407 /fo".\Release/XGraph.res" /d "NDEBUG" /d "_AFXDLL" "E:\GeoReveal\Dll\XGraph_src\XGraph.rc"" 
+Creating temporary file "C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP138.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /Od /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_AFXEXT" /D "_WINDLL" /D "_AFXDLL" /FR".\Release/" /Fp".\Release/XGRAPH.pch" /Yu"stdafx.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"E:\GeoReveal\Dll\XGraph_src\AxisDlg.cpp"
+"E:\GeoReveal\Dll\XGraph_src\ChartDlg.cpp"
+"E:\GeoReveal\Dll\XGraph_src\ChartPage.cpp"
+"E:\GeoReveal\Dll\XGraph_src\ColorButton.cpp"
+"E:\GeoReveal\Dll\XGraph_src\ColourPopup.cpp"
+"E:\GeoReveal\Dll\XGraph_src\CurveDlg.cpp"
+"E:\GeoReveal\Dll\XGraph_src\gfxutils.cpp"
+"E:\GeoReveal\Dll\XGraph_src\LabelDlg.cpp"
+"E:\GeoReveal\Dll\XGraph_src\MovingAvgDlg.cpp"
+"E:\GeoReveal\Dll\XGraph_src\TrendDlg.cpp"
+"E:\GeoReveal\Dll\XGraph_src\vector2d.cpp"
+"E:\GeoReveal\Dll\XGraph_src\XGRAPH.cpp"
+"E:\GeoReveal\Dll\XGraph_src\XGraph10.cpp"
+"E:\GeoReveal\Dll\XGraph_src\XGraphAxis.cpp"
+"E:\GeoReveal\Dll\XGraph_src\XGraphDataNotation.cpp"
+"E:\GeoReveal\Dll\XGraph_src\XGraphDataSerie.cpp"
+"E:\GeoReveal\Dll\XGraph_src\XGraphLabel.cpp"
+"E:\GeoReveal\Dll\XGraph_src\XGraphObjectBase.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP138.tmp"" 
+Creating temporary file "C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP139.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /Od /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_AFXEXT" /D "_WINDLL" /D "_AFXDLL" /FR".\Release/" /Fp".\Release/XGRAPH.pch" /Yc"stdafx.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"E:\GeoReveal\Dll\XGraph_src\StdAfx.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP139.tmp"" 
+Creating temporary file "C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP13A.tmp" with contents
+[
+/nologo /dll /incremental:no /pdb:"..\..\LinkLib/XGRAPH10.pdb" /machine:I386 /def:".\xgraph.def" /out:"D:\测井解释平台\System\XGRAPH10.dll" /implib:"lib/XGRAPH10.lib" 
+.\Release\AxisDlg.obj
+.\Release\ChartDlg.obj
+.\Release\ChartPage.obj
+.\Release\ColorButton.obj
+.\Release\ColourPopup.obj
+.\Release\CurveDlg.obj
+.\Release\gfxutils.obj
+.\Release\LabelDlg.obj
+.\Release\MovingAvgDlg.obj
+.\Release\StdAfx.obj
+.\Release\TrendDlg.obj
+.\Release\vector2d.obj
+.\Release\XGRAPH.obj
+.\Release\XGraph10.obj
+.\Release\XGraphAxis.obj
+.\Release\XGraphDataNotation.obj
+.\Release\XGraphDataSerie.obj
+.\Release\XGraphLabel.obj
+.\Release\XGraphObjectBase.obj
+.\Release\XGraph.res
+]
+Creating command line "link.exe @"C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP13A.tmp""
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AxisDlg.cpp
+ChartDlg.cpp
+ChartPage.cpp
+ColorButton.cpp
+ColourPopup.cpp
+CurveDlg.cpp
+gfxutils.cpp
+LabelDlg.cpp
+MovingAvgDlg.cpp
+TrendDlg.cpp
+vector2d.cpp
+XGRAPH.cpp
+XGraph10.cpp
+XGraphAxis.cpp
+XGraphDataNotation.cpp
+XGraphDataSerie.cpp
+XGraphLabel.cpp
+XGraphObjectBase.cpp
+Generating Code...
+Linking...
+   Creating library lib/XGRAPH10.lib and object lib/XGRAPH10.exp
+
+
+
+<h3>Results</h3>
+XGRAPH10.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

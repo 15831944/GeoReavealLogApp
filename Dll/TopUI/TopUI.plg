@@ -1,0 +1,129 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TopUI - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/TopUI.res" /d "NDEBUG" /d "_AFXDLL" "E:\GeoReveal\Dll\TopUI\TopUI.rc"" 
+Creating temporary file "C:\DOCUME~1\À¶Ìì°×ÔÆ\LOCALS~1\Temp\RSP5F.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Release/TopUI.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\GeoReveal\Dll\TopUI\AutoHideBar.cpp"
+"E:\GeoReveal\Dll\TopUI\BCMenu.cpp"
+"E:\GeoReveal\Dll\TopUI\BkDialogST.cpp"
+"E:\GeoReveal\Dll\TopUI\BrowseCtrl.cpp"
+"E:\GeoReveal\Dll\TopUI\BtnST.cpp"
+"E:\GeoReveal\Dll\TopUI\ClockCtrl.cpp"
+"E:\GeoReveal\Dll\TopUI\CMYButton.cpp"
+"E:\GeoReveal\Dll\TopUI\CMYControlBar.cpp"
+"E:\GeoReveal\Dll\TopUI\CMYTabctrlBar.cpp"
+"E:\GeoReveal\Dll\TopUI\ColorListBox.cpp"
+"E:\GeoReveal\Dll\TopUI\DockPageBar.cpp"
+"E:\GeoReveal\Dll\TopUI\EnBitmap.cpp"
+"E:\GeoReveal\Dll\TopUI\ImageTabWnd.cpp"
+"E:\GeoReveal\Dll\TopUI\KCBusyProgressCtrl.cpp"
+"E:\GeoReveal\Dll\TopUI\ListEditCtrl.cpp"
+"E:\GeoReveal\Dll\TopUI\MDITabs.cpp"
+"E:\GeoReveal\Dll\TopUI\MyBitmap.cpp"
+"E:\GeoReveal\Dll\TopUI\sizecbar.cpp"
+"E:\GeoReveal\Dll\TopUI\SkinButton.cpp"
+"E:\GeoReveal\Dll\TopUI\SkinResource.cpp"
+"E:\GeoReveal\Dll\TopUI\SkinWin.cpp"
+"E:\GeoReveal\Dll\TopUI\TopUI.cpp"
+"E:\GeoReveal\Dll\TopUI\UIFixTB.cpp"
+"E:\GeoReveal\Dll\TopUI\UIFlatBar.cpp"
+"E:\GeoReveal\Dll\TopUI\UIMenuBar.cpp"
+"E:\GeoReveal\Dll\TopUI\UISubclass.cpp"
+"E:\GeoReveal\Dll\TopUI\Utils.cpp"
+"E:\GeoReveal\Dll\TopUI\WndShadow.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\À¶Ìì°×ÔÆ\LOCALS~1\Temp\RSP5F.tmp"" 
+Creating temporary file "C:\DOCUME~1\À¶Ìì°×ÔÆ\LOCALS~1\Temp\RSP60.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Release/TopUI.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\GeoReveal\Dll\TopUI\StdAfx.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\À¶Ìì°×ÔÆ\LOCALS~1\Temp\RSP60.tmp"" 
+Creating temporary file "C:\DOCUME~1\À¶Ìì°×ÔÆ\LOCALS~1\Temp\RSP61.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\LinkLib/TopUI.pdb" /machine:I386 /def:".\TopUI.def" /out:"D:\²â¾®½âÊÍÆ½Ì¨\System\TopUI.dll" /implib:"..\..\LinkLib/TopUI.lib" 
+.\Release\AutoHideBar.obj
+.\Release\BCMenu.obj
+.\Release\BkDialogST.obj
+.\Release\BrowseCtrl.obj
+.\Release\BtnST.obj
+.\Release\ClockCtrl.obj
+.\Release\CMYButton.obj
+.\Release\CMYControlBar.obj
+.\Release\CMYTabctrlBar.obj
+.\Release\ColorListBox.obj
+.\Release\DockPageBar.obj
+.\Release\EnBitmap.obj
+.\Release\ImageTabWnd.obj
+.\Release\KCBusyProgressCtrl.obj
+.\Release\ListEditCtrl.obj
+.\Release\MDITabs.obj
+.\Release\MyBitmap.obj
+.\Release\sizecbar.obj
+.\Release\SkinButton.obj
+.\Release\SkinResource.obj
+.\Release\SkinWin.obj
+.\Release\StdAfx.obj
+.\Release\TopUI.obj
+.\Release\UIFixTB.obj
+.\Release\UIFlatBar.obj
+.\Release\UIMenuBar.obj
+.\Release\UISubclass.obj
+.\Release\Utils.obj
+.\Release\WndShadow.obj
+.\Release\TopUI.res
+]
+Creating command line "link.exe @"C:\DOCUME~1\À¶Ìì°×ÔÆ\LOCALS~1\Temp\RSP61.tmp""
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AutoHideBar.cpp
+BCMenu.cpp
+BkDialogST.cpp
+BrowseCtrl.cpp
+BtnST.cpp
+ClockCtrl.cpp
+CMYButton.cpp
+CMYControlBar.cpp
+CMYTabctrlBar.cpp
+ColorListBox.cpp
+DockPageBar.cpp
+EnBitmap.cpp
+ImageTabWnd.cpp
+KCBusyProgressCtrl.cpp
+ListEditCtrl.cpp
+MDITabs.cpp
+MyBitmap.cpp
+sizecbar.cpp
+SkinButton.cpp
+SkinResource.cpp
+Generating Code...
+Compiling...
+SkinWin.cpp
+TopUI.cpp
+UIFixTB.cpp
+UIFlatBar.cpp
+UIMenuBar.cpp
+UISubclass.cpp
+Utils.cpp
+WndShadow.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\LinkLib/TopUI.lib and object ..\..\LinkLib/TopUI.exp
+
+
+
+<h3>Results</h3>
+TopUI.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

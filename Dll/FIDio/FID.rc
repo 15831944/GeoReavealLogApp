@@ -1,0 +1,285 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "FIDRes.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "FIDRes.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\FID.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+FID_IDD_PROGRESS DIALOGEX 0, 0, 238, 84
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "进度指示"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "中断",IDCANCEL,189,6,42,14
+    CONTROL         "Progress1",FID_IDC_PROGDLG_PROGRESS,"msctls_progress32",
+                    0x1,7,66,224,11
+    LTEXT           " 0 %",FID_IDC_PROGDLG_PERCENT,116,42,28,10
+    LTEXT           "当前进度",FID_IDC_STATIC,8,42,33,11
+    LTEXT           "",FID_IDC_CURDEP,46,42,53,8
+    LTEXT           "正在处理，稍侯...",FID_IDC_TTITLE,8,9,178,24
+    RTEXT           "静态",IDC_DEPRANG,157,43,71,8
+END
+
+FID_IDD_DISPLAY DIALOGEX 0, 0, 325, 204
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",FID_IDC_DISPLAY_STATIC,2,2,322,139,SS_SUNKEN,
+                    WS_EX_TRANSPARENT
+    LTEXT           "极睿解释平台2015 for Windows 7",FID_IDC_STATIC1,39,174,
+                    175,11
+    LTEXT           "川庆钻探工程有限公司测井公司",FID_IDC_STATIC2,38,186,
+                    114,12
+    LTEXT           "http://10.132.200.177",FID_IDC_STATIC_LINK,159,186,94,
+                    12
+    GROUPBOX        "",FID_IDC_STATIC,1,163,324,38
+    LTEXT           "Editor",FID_EDITOR,7,150,270,9
+    GROUPBOX        "",IDC_STATIC,1,141,282,22
+    PUSHBUTTON      "OK",IDCANCEL,285,147,38,14
+    ICON            IDI_ICON1,IDC_STATIC,8,173,20,20
+END
+
+IDD_LOGVIEW DIALOGEX 0, 0, 144, 352
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "曲线预览"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "风格",IDC_STYLE,115,2,29,12,NOT WS_TABSTOP
+    LTEXT           "Value",IDC_VALUE,3,4,112,10
+END
+
+IDD_LOGATT_DLG DIALOGEX 0, 0, 186, 108
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "曲线风格"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,137,77,42,13
+    PUSHBUTTON      "取消",IDCANCEL,95,77,40,13
+    LTEXT           "起始深度",IDC_STATIC,7,9,33,12
+    EDITTEXT        IDC_SDEP_EDIT,43,7,45,12,ES_AUTOHSCROLL
+    LTEXT           "结束深度",IDC_STATIC,95,9,33,11
+    EDITTEXT        IDC_EDEP_EDIT,132,7,45,12,ES_AUTOHSCROLL
+    LTEXT           "左边刻度",IDC_STATIC,7,31,33,11
+    EDITTEXT        IDC_LEFT_EDIT,43,29,45,12,ES_AUTOHSCROLL
+    LTEXT           "右边刻度",IDC_STATIC,95,29,33,11
+    EDITTEXT        IDC_RIGHT_EDIT,132,27,45,12,ES_AUTOHSCROLL
+    LTEXT           "线的宽度",IDC_STATIC,7,51,33,12
+    LTEXT           "线的颜色",IDC_STATIC,97,49,33,11
+    COMBOBOX        IDC_LINEWIDTH_COMBO,43,47,47,49,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINECOLOR_COMBO,132,47,47,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "线性",IDC_LINE_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,16,84,28,8
+    CONTROL         "对数",IDC_LOG_RADIO1,"Button",BS_AUTORADIOBUTTON,50,84,
+                    30,8
+    GROUPBOX        "刻度类型",IDC_STATIC,7,68,83,33
+END
+
+IDD_MESGDLG DIALOGEX 0, 0, 247, 72
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "极睿解释平台"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,201,23,37,13
+    LTEXT           "Static\n1\n2",IDC_MSG,42,25,147,35
+    GROUPBOX        "信息提示",IDC_STATIC,7,7,191,55
+    ICON            IDI_ICON1,IDC_STATIC,13,27,21,21
+    PUSHBUTTON      "取消",IDCANCEL,201,38,37,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    FID_IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 80
+    END
+
+    FID_IDD_DISPLAY, DIALOG
+    BEGIN
+        RIGHTMARGIN, 265
+        BOTTOMMARGIN, 180
+        HORZGUIDE, 159
+    END
+
+    IDD_LOGVIEW, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 351
+    END
+
+    IDD_LOGATT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_MESGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "四川石油测井公司"
+            VALUE "FileVersion", "1, 0, 0, 0"
+            VALUE "InternalName", "基本输入输出动态库 1.0"
+            VALUE "Language", "中文(简体)"
+            VALUE "LegalCopyright", "Copyright 1999 2000 2001"
+            VALUE "LegalTrademarks", "面向对象测井处理平台"
+            VALUE "OriginalFilename", "FIDio.DLL"
+            VALUE "ProductName", "基本输入输出动态库"
+            VALUE "ProductVersion", "1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+FID_IDC_FINGER          CURSOR                  "RES\\Cur134.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "RES\\LogShell.ico"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\FID.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

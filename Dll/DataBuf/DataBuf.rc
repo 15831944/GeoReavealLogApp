@@ -1,0 +1,623 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DataBuf.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "DataIO DLL"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "DataIO"
+            VALUE "LegalCopyright", "版权所有 (C) 2005"
+            VALUE "OriginalFilename", "DataIO.DLL"
+            VALUE "ProductName", "DataIO Dynamic Link Library"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CG_IDD_PROGRESS DIALOGEX 0, 0, 206, 57
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "进度指示"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "中断",IDCANCEL,149,8,50,15
+    CONTROL         "Progress1",CG_IDC_PROGDLG_PROGRESS,"msctls_progress32",
+                    0x0,7,31,192,12
+    CTEXT           " 0 %",CG_IDC_PROGDLG_PERCENT,12,12,127,8
+END
+
+IDD_MODICURVE_DIALOG DIALOGEX 0, 0, 296, 234
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "曲线名编辑"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,236,7,50,14
+    GROUPBOX        "最大长度",IDC_STATIC,233,201,56,28
+    EDITTEXT        IDC_MAXLEN_EDIT,239,212,45,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    CONTROL         "List1",IDC_CURVE_NAME_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_EDITLABELS | WS_BORDER | WS_TABSTOP,7,7,224,208
+    PUSHBUTTON      "删除选择",IDC_DELETE_BTN,236,39,50,14
+    GROUPBOX        "曲线数",IDC_STATIC,233,154,56,43
+    EDITTEXT        IDC_MAXLOG_EDIT,261,165,22,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    GROUPBOX        "替换字符",IDC_STATIC,233,104,56,46
+    EDITTEXT        IDC_OLDSTR_EDIT,237,117,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWSTR_EDIT,262,117,24,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "修改",IDC_MODIFYSTR_BTN,237,132,48,13
+    LTEXT           "最多",IDC_STATIC,241,168,17,8
+    EDITTEXT        IDC_NUMLOG_EDIT,261,180,22,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    LTEXT           "当前",IDC_STATIC,241,183,17,8
+    PUSHBUTTON      "左截字符",IDC_GETLEFT_BTN,236,71,50,14
+    PUSHBUTTON      "右截字符",IDC_GETRIGHT_BTN,236,87,50,14
+    PUSHBUTTON      "放弃转换",IDCANCEL,236,23,50,14
+    PUSHBUTTON      "清除异常",IDC_CLEARERR_BTN,236,55,50,14
+    LTEXT           "L曲线名太长 F第一个必须为字符 E曲线名相同 B不能用空格",
+                    IDC_STATIC,7,220,214,9
+END
+
+IDD_SETDLISPARA_DLG DIALOGEX 0, 0, 217, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "数据源信息"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,111,98,50,14
+    LTEXT           "公司名",IDC_STATIC,7,28,25,8
+    EDITTEXT        IDC_COMPANY_EDIT,33,26,177,12,ES_AUTOHSCROLL
+    LTEXT           "井　名",IDC_STATIC,7,65,25,8
+    EDITTEXT        IDC_WELL_EDIT,33,63,177,12,ES_AUTOHSCROLL
+    LTEXT           "油田名",IDC_STATIC,7,46,25,8
+    EDITTEXT        IDC_FIELD_EDIT,33,44,177,12,ES_AUTOHSCROLL
+    LTEXT           "缺省值",IDC_STATIC,7,82,25,8
+    EDITTEXT        IDC_DEFAULTVAL_EDIT,33,80,177,12,ES_AUTOHSCROLL
+    LTEXT           "文件名",IDC_STATIC,7,10,25,8
+    EDITTEXT        IDC_FILENAME_EDIT,33,8,177,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "自动创建",IDC_ALLIGNORE_BTN,56,98,50,14
+END
+
+IDD_EDITDLISCURVES_DLG DIALOGEX 0, 0, 368, 211
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "DLIS曲线选择"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,320,187,41,16
+    CONTROL         "List1",IDC_DLISCURVES_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_EDITLABELS | WS_BORDER | WS_TABSTOP,7,7,354,179
+    LTEXT           "允许曲线数",IDC_STATIC,7,192,41,8
+    LTEXT           "曲线数",IDC_STATIC,86,192,25,8
+    EDITTEXT        IDC_MAXLOGNUM_EDIT,51,190,28,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_NUMLOG_EDIT,112,190,21,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_CURVES_STATUS_EDIT,140,192,120,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+END
+
+IDD_SETCONVINDEX_DLG DIALOGEX 0, 0, 210, 91
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "曲线索引信息"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,61,70,71,14
+    LTEXT           "起始索引",IDC_STATIC,14,22,33,8
+    EDITTEXT        IDC_OLDSTART_EDIT,51,20,47,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "终止索引",IDC_STATIC,13,36,33,8
+    EDITTEXT        IDC_OLDSTOP_EDIT,51,34,47,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "采样间隔",IDC_STATIC,13,50,33,8
+    EDITTEXT        IDC_OLDRLEV_EDIT,51,48,47,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "原值",IDC_STATIC,7,7,97,57
+    LTEXT           "起始索引",IDC_STATIC,115,20,33,8
+    EDITTEXT        IDC_NEWSTART_EDIT,151,18,47,12,ES_AUTOHSCROLL
+    LTEXT           "终止索引",IDC_STATIC,115,35,33,8
+    EDITTEXT        IDC_NEWSTOP_EDIT,151,33,47,12,ES_AUTOHSCROLL
+    LTEXT           "采样间隔",IDC_STATIC,115,50,33,8
+    EDITTEXT        IDC_NEWRLEV_EDIT,151,48,47,12,ES_AUTOHSCROLL
+    GROUPBOX        "新值",IDC_STATIC,107,7,96,58
+END
+
+IDD_NEWFILENAME_DLG DIALOGEX 0, 0, 266, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "修改文件名"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,208,7,50,14
+    EDITTEXT        IDC_MANUALFILENAME_EDIT,7,30,252,14,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    EDITTEXT        IDC_STATUS_EDIT,9,11,192,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+END
+
+IDD_CURVEATTRIB_DLG DIALOGEX 0, 0, 189, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "曲线属性"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NEWCURVE_EDIT,49,29,133,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,77,83,50,15
+    EDITTEXT        IDC_OLDCURVE_EDIT,49,9,133,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_OLDUNITS_EDIT,49,47,133,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "原曲线名",IDC_STATIC,13,12,33,8
+    LTEXT           "新曲线名",IDC_STATIC,13,31,33,8
+    LTEXT           "原单位名",IDC_STATIC,13,49,33,8
+    LTEXT           "新单位名",IDC_STATIC,13,68,33,8
+    COMBOBOX        IDC_NEWUNITS_COMBO,49,66,133,225,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    CG_IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_MODICURVE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+    END
+
+    IDD_SETDLISPARA_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_EDITDLISCURVES_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_SETCONVINDEX_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_NEWFILENAME_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CURVEATTRIB_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CURVENAME_POPUP MENU 
+BEGIN
+    POPUP "对曲线的操作"
+    BEGIN
+        MENUITEM "删除选择曲线",                ID_CURVENAME_DELSELECT
+        MENUITEM SEPARATOR
+        MENUITEM "同名曲线加帧号",              ID_CURVENAME_ADDFRAMENO
+        MENUITEM "同名曲线加源",                ID_CURVENAME_ADDORIGIN
+        MENUITEM "同名曲线加拷贝号",            ID_CURVENAME_ADDCOPYNUM
+        MENUITEM SEPARATOR
+        MENUITEM "删除异常字符曲线",            ID_CURVENAME_DELBAD
+        MENUITEM "删除同名曲线",                ID_CURVENAME_DELSAME
+        MENUITEM "删除超长曲线",                ID_CURVENAME_DELTOOLEN
+        MENUITEM "删除异常曲线",                ID_CURVENAME_CLEARERROR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CURVEATTRIB_DLG DLGINIT
+BEGIN
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x2041, 0x2d2d, 0x2d2d, 0x202d, 0x6d61, 0x6570, 0x6572, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x204b, 0x2d2d, 0x2d2d, 0x202d, 0x654b, 0x766c, 0x6e69, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x6463, 0x2d20, 0x2d2d, 0x202d, 0x6163, 0x646e, 0x6c65, 0x0061, 
+    IDC_NEWUNITS_COMBO, 0x403, 20, 0
+0x4164, 0x4950, 0x2d20, 0x202d, 0x5041, 0x2049, 0x7267, 0x7661, 0x7469, 
+0x0079, 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x4264, 0x2d20, 0x2d2d, 0x202d, 0x6564, 0x6963, 0x6562, 0x006c, 
+    IDC_NEWUNITS_COMBO, 0x403, 22, 0
+0x4167, 0x4950, 0x2d20, 0x202d, 0x5041, 0x2049, 0x6167, 0x6d6d, 0x2061, 
+0x6172, 0x0079, 
+    IDC_NEWUNITS_COMBO, 0x403, 17, 0
+0x676b, 0x2d20, 0x2d2d, 0x202d, 0x696b, 0x6f6c, 0x7267, 0x6d61, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 14, 0
+0x206d, 0x2d2d, 0x2d2d, 0x202d, 0x656d, 0x6574, 0x0072, 
+    IDC_NEWUNITS_COMBO, 0x403, 13, 0
+0x6f6d, 0x2d20, 0x2d2d, 0x202d, 0x6f6d, 0x656c, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 20, 0
+0x416e, 0x4950, 0x2d20, 0x202d, 0x5041, 0x2049, 0x656e, 0x7475, 0x6f72, 
+0x006e, 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x6172, 0x2064, 0x2d2d, 0x202d, 0x6172, 0x6964, 0x6e61, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x2073, 0x2d2d, 0x2d2d, 0x202d, 0x6573, 0x6f63, 0x646e, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 18, 0
+0x7273, 0x2d20, 0x2d2d, 0x202d, 0x7473, 0x7265, 0x6461, 0x6169, 0x006e, 
+
+    IDC_NEWUNITS_COMBO, 0x403, 24, 0
+0x7442, 0x2075, 0x2d2d, 0x202d, 0x3031, 0x3535, 0x302e, 0x3535, 0x3538, 
+0x3632, 0x2032, 0x004a, 
+    IDC_NEWUNITS_COMBO, 0x403, 12, 0
+0x2043, 0x2d2d, 0x2d2d, 0x202d, 0x2e41, 0x0073, 
+    IDC_NEWUNITS_COMBO, 0x403, 23, 0
+0x2044, 0x2d2d, 0x2d2d, 0x202d, 0x2e30, 0x3839, 0x3936, 0x3332, 0x2033, 
+0x7275, 0x326e, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x5047, 0x2061, 0x2d2d, 0x202d, 0x4531, 0x2039, 0x6150, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 14, 0
+0x6147, 0x206c, 0x2d2d, 0x202d, 0x6d63, 0x732f, 0x0032, 
+    IDC_NEWUNITS_COMBO, 0x403, 12, 0
+0x7a48, 0x2d20, 0x2d2d, 0x202d, 0x2f6c, 0x0073, 
+    IDC_NEWUNITS_COMBO, 0x403, 12, 0
+0x204a, 0x2d2d, 0x2d2d, 0x202d, 0x2e4e, 0x006d, 
+    IDC_NEWUNITS_COMBO, 0x403, 12, 0
+0x204c, 0x2d2d, 0x2d2d, 0x202d, 0x6d64, 0x0033, 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x484d, 0x207a, 0x2d2d, 0x202d, 0x4531, 0x2036, 0x7a48, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x504d, 0x2061, 0x2d2d, 0x202d, 0x4531, 0x2036, 0x6150, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x654d, 0x2056, 0x2d2d, 0x202d, 0x4531, 0x2036, 0x5665, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x674d, 0x2d20, 0x2d2d, 0x202d, 0x3031, 0x3030, 0x6b20, 0x0067, 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x704d, 0x6973, 0x2d20, 0x202d, 0x4531, 0x2036, 0x7370, 0x0069, 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x204e, 0x2d2d, 0x2d2d, 0x202d, 0x676b, 0x6d2e, 0x732f, 0x0032, 
+    IDC_NEWUNITS_COMBO, 0x403, 21, 0
+0x654f, 0x2d20, 0x2d2d, 0x202d, 0x3937, 0x352e, 0x3737, 0x3734, 0x4120, 
+0x6d2f, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 17, 0
+0x2050, 0x2d2d, 0x2d2d, 0x202d, 0x2e30, 0x2031, 0x6150, 0x732e, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 13, 0
+0x6150, 0x2d20, 0x2d2d, 0x202d, 0x2f4e, 0x326d, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 12, 0
+0x2053, 0x2d2d, 0x2d2d, 0x202d, 0x2f41, 0x0056, 
+    IDC_NEWUNITS_COMBO, 0x403, 14, 0
+0x2054, 0x2d2d, 0x2d2d, 0x202d, 0x6257, 0x6d2f, 0x0032, 
+    IDC_NEWUNITS_COMBO, 0x403, 12, 0
+0x2056, 0x2d2d, 0x2d2d, 0x202d, 0x2f57, 0x0041, 
+    IDC_NEWUNITS_COMBO, 0x403, 12, 0
+0x2057, 0x2d2d, 0x2d2d, 0x202d, 0x2f4a, 0x0073, 
+    IDC_NEWUNITS_COMBO, 0x403, 12, 0
+0x6257, 0x2d20, 0x2d2d, 0x202d, 0x2e56, 0x0073, 
+    IDC_NEWUNITS_COMBO, 0x403, 22, 0
+0x2061, 0x2d2d, 0x2d2d, 0x202d, 0x2e33, 0x3120, 0x3535, 0x3138, 0x4535, 
+0x2037, 0x0073, 
+    IDC_NEWUNITS_COMBO, 0x403, 29, 0
+0x6361, 0x6572, 0x2d20, 0x202d, 0x3236, 0x3237, 0x3436, 0x3545, 0x312f, 
+0x3435, 0x3939, 0x3639, 0x2039, 0x326d, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 20, 0
+0x7461, 0x206d, 0x2d2d, 0x202d, 0x3031, 0x2e31, 0x3233, 0x2035, 0x506b, 
+0x0061, 
+    IDC_NEWUNITS_COMBO, 0x403, 17, 0
+0x2062, 0x2d2d, 0x2d2d, 0x202d, 0x4531, 0x322d, 0x2038, 0x326d, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x6162, 0x2072, 0x2d2d, 0x202d, 0x3031, 0x2030, 0x506b, 0x0061, 
+    IDC_NEWUNITS_COMBO, 0x403, 23, 0
+0x6262, 0x206c, 0x2d2d, 0x202d, 0x2e30, 0x3531, 0x3938, 0x3738, 0x3033, 
+0x2034, 0x336d, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x2063, 0x2d2d, 0x2d2d, 0x202d, 0x3633, 0x2030, 0x6564, 0x0067, 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x5063, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3130, 0x5020, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 17, 0
+0x6163, 0x206c, 0x2d2d, 0x202d, 0x2e34, 0x3831, 0x3836, 0x4a20, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x6d63, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3130, 0x6d20, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x7563, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x2031, 0x2f31, 0x006d, 
+    IDC_NEWUNITS_COMBO, 0x403, 13, 0
+0x2064, 0x2d2d, 0x2d2d, 0x202d, 0x3432, 0x6820, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 13, 0
+0x6164, 0x204e, 0x2d2d, 0x202d, 0x3031, 0x4e20, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 28, 0
+0x6564, 0x2067, 0x2d2d, 0x202d, 0x2e30, 0x3130, 0x3437, 0x3335, 0x3932, 
+0x3532, 0x3931, 0x2038, 0x6172, 0x0064, 
+    IDC_NEWUNITS_COMBO, 0x403, 17, 0
+0x6564, 0x4367, 0x2d20, 0x202d, 0x2d4b, 0x3732, 0x2e33, 0x3531, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 20, 0
+0x6564, 0x4667, 0x2d20, 0x202d, 0x2f35, 0x2039, 0x6564, 0x4367, 0x332b, 
+0x0032, 
+    IDC_NEWUNITS_COMBO, 0x403, 14, 0
+0x6d64, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x2031, 0x006d, 
+    IDC_NEWUNITS_COMBO, 0x403, 22, 0
+0x5665, 0x2d20, 0x2d2d, 0x202d, 0x2e31, 0x3036, 0x3132, 0x4539, 0x312d, 
+0x2039, 0x004a, 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x4366, 0x2d20, 0x2d2d, 0x202d, 0x4531, 0x312d, 0x2035, 0x0043, 
+    IDC_NEWUNITS_COMBO, 0x403, 14, 0
+0x7466, 0x2d20, 0x2d2d, 0x202d, 0x3231, 0x6920, 0x006e, 
+    IDC_NEWUNITS_COMBO, 0x403, 17, 0
+0x2067, 0x2d2d, 0x2d2d, 0x202d, 0x2e30, 0x3030, 0x2031, 0x676b, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 17, 0
+0x6167, 0x206c, 0x2d2d, 0x202d, 0x2f31, 0x3234, 0x6220, 0x6c62, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x2068, 0x2d2d, 0x2d2d, 0x202d, 0x3036, 0x6d20, 0x6e69, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 17, 0
+0x6e69, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3230, 0x3435, 0x6d20, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x486b, 0x207a, 0x2d2d, 0x202d, 0x3031, 0x3030, 0x4820, 0x007a, 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x506b, 0x2061, 0x2d2d, 0x202d, 0x3031, 0x3030, 0x5020, 0x0061, 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x566b, 0x2d20, 0x2d2d, 0x202d, 0x3031, 0x3030, 0x5620, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x656b, 0x2056, 0x2d2d, 0x202d, 0x3031, 0x3030, 0x6520, 0x0056, 
+    IDC_NEWUNITS_COMBO, 0x403, 19, 0
+0x676b, 0x2066, 0x2d2d, 0x202d, 0x2e39, 0x3038, 0x3636, 0x3035, 0x4e20, 
+"\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x6d6b, 0x2d20, 0x2d2d, 0x202d, 0x3031, 0x3030, 0x6d20, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 26, 0
+0x626c, 0x2066, 0x2d2d, 0x202d, 0x2e34, 0x3434, 0x3238, 0x3132, 0x3136, 
+0x3235, 0x3036, 0x2035, 0x004e, 
+    IDC_NEWUNITS_COMBO, 0x403, 22, 0
+0x626c, 0x206d, 0x2d2d, 0x202d, 0x2e30, 0x3534, 0x3533, 0x3239, 0x3733, 
+0x6b20, 0x0067, 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x416d, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3030, 0x2031, 0x0041, 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x436d, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3030, 0x2031, 0x0043, 
+    IDC_NEWUNITS_COMBO, 0x403, 25, 0
+0x446d, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3839, 0x3936, 0x3332, 0x4533, 
+0x332d, 0x7520, 0x326d, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 18, 0
+0x476d, 0x6c61, 0x2d20, 0x202d, 0x2e30, 0x3030, 0x2031, 0x6147, 0x006c, 
+
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x4c6d, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3030, 0x2031, 0x004c, 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x536d, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3030, 0x2031, 0x0053, 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x546d, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3030, 0x2031, 0x0054, 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x566d, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3030, 0x2031, 0x0056, 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x576d, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3030, 0x2031, 0x0057, 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x676d, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3030, 0x2031, 0x0067, 
+    IDC_NEWUNITS_COMBO, 0x403, 13, 0
+0x696d, 0x206e, 0x2d2d, 0x202d, 0x3036, 0x7320, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x6d6d, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3030, 0x2031, 0x006d, 
+    IDC_NEWUNITS_COMBO, 0x403, 18, 0
+0x6f6d, 0x6d68, 0x2d20, 0x202d, 0x2e30, 0x3030, 0x2031, 0x686f, 0x006d, 
+
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x736d, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3030, 0x2031, 0x0073, 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x436e, 0x2d20, 0x2d2d, 0x202d, 0x4531, 0x392d, 0x4320, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x576e, 0x2d20, 0x2d2d, 0x202d, 0x4531, 0x392d, 0x5720, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x736e, 0x2d20, 0x2d2d, 0x202d, 0x4531, 0x392d, 0x7320, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 12, 0
+0x686f, 0x206d, 0x2d2d, 0x202d, 0x2f56, 0x0041, 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x4370, 0x2d20, 0x2d2d, 0x202d, 0x4531, 0x312d, 0x2032, 0x0043, 
+    IDC_NEWUNITS_COMBO, 0x403, 17, 0
+0x5070, 0x2061, 0x2d2d, 0x202d, 0x4531, 0x312d, 0x2032, 0x6150, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x7070, 0x6b64, 0x2d20, 0x202d, 0x2e30, 0x3030, 0x3130, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 14, 0
+0x7070, 0x206b, 0x2d2d, 0x202d, 0x2e30, 0x3030, 0x0031, 
+    IDC_NEWUNITS_COMBO, 0x403, 17, 0
+0x7070, 0x206d, 0x2d2d, 0x202d, 0x2e30, 0x3030, 0x3030, 0x3130, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x7370, 0x2069, 0x2d2d, 0x202d, 0x626c, 0x2f66, 0x6e69, 0x0032, 
+    IDC_NEWUNITS_COMBO, 0x403, 19, 0
+0x7570, 0x2d20, 0x2d2d, 0x202d, 0x2e30, 0x3130, 0x6d20, 0x2f33, 0x336d, 
+"\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x2074, 0x2d2d, 0x2d2d, 0x202d, 0x3031, 0x3030, 0x6b20, 0x0067, 
+    IDC_NEWUNITS_COMBO, 0x403, 17, 0
+0x6f74, 0x206e, 0x2d2d, 0x202d, 0x3032, 0x3030, 0x6c20, 0x6d62, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x4175, 0x2d20, 0x2d2d, 0x202d, 0x4531, 0x362d, 0x4120, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x4375, 0x2d20, 0x2d2d, 0x202d, 0x4531, 0x362d, 0x4320, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 16, 0
+0x5075, 0x2061, 0x2d2d, 0x202d, 0x4531, 0x362d, 0x5020, 0x0061, 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x5675, 0x2d20, 0x2d2d, 0x202d, 0x4531, 0x362d, 0x5620, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x6d75, 0x2d20, 0x2d2d, 0x202d, 0x4531, 0x362d, 0x6d20, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 17, 0
+0x6f75, 0x6d68, 0x2d20, 0x202d, 0x4531, 0x362d, 0x6f20, 0x6d68, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 17, 0
+0x7075, 0x6973, 0x2d20, 0x202d, 0x4531, 0x362d, 0x7020, 0x6973, "\000" 
+    IDC_NEWUNITS_COMBO, 0x403, 15, 0
+0x7375, 0x2d20, 0x2d2d, 0x202d, 0x4531, 0x362d, 0x7320, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_CURVENAME_DELSAME    "删除同名曲线\n删除同名曲线"
+    ID_CURVENAME_DELBAD     "删除异常名曲线\n删除异常名曲线"
+    ID_CURVENAME_ADDFRAMENO "同名曲线加帧号\n同名曲线加帧号"
+    ID_CURVENAME_ADDCOPYNUM "同名曲线加拷贝号\n同名曲线加拷贝号"
+    ID_CURVENAME_ADDORIGIN  "同名曲线加源\n同名曲线加源"
+    ID_CURVENAME_DELTOOLEN  "删除超长曲线\n删除超长曲线"
+    ID_CURVENAME_DELSELECT  "删除选择曲线\n删除选择曲线"
+    ID_CURVENAME_CLEARERROR "删除异常曲线\n删除异常曲线"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\DataBuf.rc2"  // non-Microsoft Visual C++ edited resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

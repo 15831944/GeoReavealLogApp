@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FlowChart - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP44.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/FlowChart.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\GeoReveal\FlowChart\BackupDlg.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP44.tmp"" 
+Creating temporary file "C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP45.tmp" with contents
+[
+FIDio.Lib TopUI.Lib LogSys.Lib GeoMath.Lib /nologo /subsystem:windows /incremental:no /pdb:"Release/FlowChart.pdb" /machine:I386 /out:"D:\测井解释平台\System\FlowChart.exe" /libpath:"..\LinkLib" 
+.\Release\AACCorrect.obj
+.\Release\BackupData.obj
+.\Release\BackupDlg.obj
+.\Release\CustomVerticalTree.obj
+.\Release\DataUnite.obj
+.\Release\DepCorrect.obj
+.\Release\DIPCompute.obj
+.\Release\DIPComputeDlg.obj
+.\Release\FlowChart.obj
+.\Release\FlowChartDoc.obj
+.\Release\FlowChartView.obj
+.\Release\FlowNode.obj
+.\Release\GainRegress.obj
+.\Release\ImageAzCorrect.obj
+.\Release\ImageCrea.obj
+.\Release\ImageCreatDlg.obj
+.\Release\ImageGeoCorrect.obj
+.\Release\ImagePoisePro.obj
+.\Release\ImageRMFScale.obj
+.\Release\ImageToneup.obj
+.\Release\ImageToneupDlg.obj
+.\Release\ImgFrequency.obj
+.\Release\LinkWellData.obj
+.\Release\MainFrm.obj
+.\Release\ManPro.obj
+.\Release\PadCorrect.obj
+.\Release\PADDepCorDlg.obj
+.\Release\PlayBack.obj
+.\Release\PORCompute.obj
+.\Release\ProItem.obj
+.\Release\RMFScaleDlg.obj
+.\Release\StdAfx.obj
+.\Release\FlowChart.res
+]
+Creating command line "link.exe @"C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP45.tmp""
+<h3>Output Window</h3>
+Compiling...
+BackupDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+FlowChart.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

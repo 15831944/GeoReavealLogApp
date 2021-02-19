@@ -1,0 +1,7 @@
+; FileFtpNet.def : Declares the module parameters for the DLL.
+
+LIBRARY      "FileFtpNet"
+DESCRIPTION  'FileFtpNet Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

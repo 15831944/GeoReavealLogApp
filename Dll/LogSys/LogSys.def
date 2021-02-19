@@ -1,0 +1,57 @@
+; LogSys.def : Declares the module parameters for the DLL.
+
+LIBRARY      "LogSysNet"
+DESCRIPTION  'LogSysNet Windows Dynamic Link Library'
+
+EXPORTS
+ ; Explicit exports can go here
+ ??0INCURVE@@QAE@PBD@Z 
+ ??0OUTCURVE@@QAE@PBD@Z
+ ??0CInFID@@QAE@PBDAAUINCURVE@@PADI@Z
+ ??1CInFID@@QAE@XZ 
+ ?CreateDefaultBuffer@CInFID@@QAEXXZ
+ ?ReadBuffer@CInFID@@QAEXM@Z
+ ?DatIn@CInFID@@QAEXM@Z
+ ?DatIn@CInFID@@QAEXMPADI@Z 
+ ?GetBuffer@CInFID@@QAEPADXZ 
+ ?GetBufferPointNum@CInFID@@QAEIXZ 
+ ?GetBufferSize@CInFID@@QAEJXZ 
+ ?SetBufferSize@CInFID@@QAEJJ@Z 
+ ?SetBufferPointNum@CInFID@@QAEII@Z 
+ ??0COutFID@@QAE@PBDAAUOUTCURVE@@PADI@Z 
+ ??0COutFID@@QAE@PBDAAUOUTCURVE@@PADIPAUtagFIDINDEX@@@Z
+ ??1COutFID@@QAE@XZ  
+ ?ReadBuffer@COutFID@@QAEXM@Z 
+ ?WriteBuffer@COutFID@@QAEXXZ
+ ?DatOut@COutFID@@QAEXM@Z 
+ ?DatOut@COutFID@@QAEXMPADI@Z 
+ ?GetBuffer@COutFID@@QAEPADXZ 
+ ?GetBufferPointNum@COutFID@@QAEIXZ 
+ ?GetBufferSize@COutFID@@QAEJXZ 
+ ?SetBufferSize@COutFID@@QAEJJ@Z 
+ ?SetBufferPointNum@COutFID@@QAEII@Z 
+
+ ??0CLogProcess@@QAE@PBD0@Z
+ ??1CLogProcess@@QAE@XZ
+ ?ParametEdit@CLogProcess@@UAEHXZ
+ ?OpenInpCard@CLogProcess@@QAEHXZ
+ ?CloseInpCard@CLogProcess@@QAEXXZ 
+ ?InitPara@CLogProcess@@QAEHHPAY09DPAM@Z
+ ?ReadInpCard@CLogProcess@@QAEHXZ
+ ?GetUpdateFlag@CLogProcess@@UAEHXZ
+ ?InitBuffer@CLogProcess@@QAEXXZ 
+ ?InitIn@CLogProcess@@QAEHHPAUINCURVE@@PAD@Z 
+ ?DatIn@CLogProcess@@QAEHXZ 
+ ?DatIn@CLogProcess@@QAEHHPADI@Z
+ ?DatIn@CLogProcess@@QAEHPAD0I@Z
+ ?InitOut@CLogProcess@@QAEHHPAUOUTCURVE@@PAD@Z
+ ?DatOut@CLogProcess@@QAEHXZ 
+ ?DatOut@CLogProcess@@QAEHHPADI@Z 
+ ?DatOut@CLogProcess@@QAEHPAD0I@Z
+ ?WriteBuffer@CLogProcess@@QAEHXZ 
+ ?SetBufferPointNum@CLogProcess@@QAEXI@Z 
+ ?IsCurveExist@CLogProcess@@QAEHPAD@Z 
+ ?GetCurveCONTENT@CLogProcess@@QAEPAUtagFIDCONTENT@@PAD@Z
+ ?SetBufferSize@CLogProcess@@QAEJJ@Z 
+ ?GetBufferSize@CLogProcess@@QAEJXZ 
+ ?DeleteFIDCurve@CLogProcess@@QAEHPAD@Z

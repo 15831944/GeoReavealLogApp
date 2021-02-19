@@ -1,0 +1,1053 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "极睿软件工作室"
+            VALUE "FileDescription", "极睿网络综合绘图组件"
+            VALUE "FileVersion", "1.5.4.1"
+            VALUE "InternalName", "PreView.ocx"
+            VALUE "LegalCopyright", "极睿软件工作室保留所有权利。"
+            VALUE "OriginalFilename", "PreView.ocx"
+            VALUE "ProductName", "极睿综合绘图"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PREVIEW             BITMAP                  "PreViewCtrl.bmp"
+LINE1                   BITMAP                  "res\\LINE1.BMP"
+LINE2                   BITMAP                  "res\\LINE2.BMP"
+LINE3                   BITMAP                  "res\\LINE3.BMP"
+LINE4                   BITMAP                  "res\\LINE4.BMP"
+LINE5                   BITMAP                  "res\\LINE5.BMP"
+IDB_FONTTYPE            BITMAP                  "res\\FONT.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_PREVIEW DIALOG  0, 0, 250, 62
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "MS Shell Dlg"
+BEGIN
+    LTEXT           "TODO: 将用于操作 PreView Control 的属性的控件放置在此对话框上。",
+                    IDC_STATIC,7,25,229,16
+END
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 555, 402
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "图形预览"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_PLOT_DEPTH DIALOGEX 0, 0, 186, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "绘图参数"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,121,38,50,14
+    EDITTEXT        IDC_PLOT_STDEP,51,23,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOT_ENDEP,51,39,51,12,ES_AUTOHSCROLL
+    LTEXT           "结束深度",IDC_STATIC,15,41,35,10
+    GROUPBOX        "深度比例",IDC_STATIC,7,7,106,68
+    LTEXT           "起始深度",IDC_STATIC,15,23,33,11
+    EDITTEXT        IDC_DEP_SCALE,51,55,51,12,ES_AUTOHSCROLL
+    LTEXT           "深度比例",IDC_STATIC,15,58,35,10
+END
+
+IDD_SET_WIDTH DIALOGEX 0, 0, 186, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "宽度设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,129,7,50,14
+    EDITTEXT        IDC_WIDTH,19,20,94,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MIN_WIDTH,111,47,67,12,ES_READONLY | NOT WS_BORDER
+    LTEXT           "注：以毫米为单位，范围：",IDC_STATIC,7,47,96,9
+    GROUPBOX        "格线道宽度",IDC_STATIC,11,5,111,34
+END
+
+IDD_SET_HEIGHT DIALOGEX 0, 0, 186, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "高度设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,129,7,50,14
+    EDITTEXT        IDC_HEIGHT,56,46,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MIN_HEIGHT,56,7,45,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "设置高度为",IDC_STATIC,8,48,43,9
+    LTEXT           "最小高度值",IDC_STATIC,8,9,43,9
+    LTEXT           "最大高度值",IDC_STATIC,8,28,43,9
+    EDITTEXT        IDC_MAX_HEIGHT,56,27,45,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "毫米",IDC_STATIC,106,10,17,9
+    LTEXT           "毫米",IDC_STATIC,106,29,17,9
+    LTEXT           "毫米",IDC_STATIC,106,48,17,9
+END
+
+CG_IDD_PROGRESS DIALOGEX 0, 0, 193, 60
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "进度指示"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,143,7,44,14
+    CONTROL         "",CG_IDC_PROGDLG_PROGRESS,"msctls_progress32",0x0,7,40,
+                    180,12
+    LTEXT           " 0 %",CG_IDC_PROGDLG_PERCENT,84,27,27,8,NOT WS_VISIBLE
+    LTEXT           "查询网络井资源...",IDC_MESG,21,12,117,10
+END
+
+IDD_CURVE_ATTDLD DIALOGEX 0, 0, 146, 119
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,93,93,45,14
+    LTEXT           "起始深度",IDC_STATIC,9,14,33,9
+    EDITTEXT        IDC_SDEP_EDIT,45,11,46,12,ES_AUTOHSCROLL
+    LTEXT           "结束深度",IDC_STATIC,9,31,33,9
+    EDITTEXT        IDC_EDEP_EDIT,45,28,46,12,ES_AUTOHSCROLL
+    LTEXT           "左边刻度",IDC_STATIC,9,48,33,9
+    EDITTEXT        IDC_LEFT_EDIT,45,45,46,12,ES_AUTOHSCROLL
+    LTEXT           "右边刻度",IDC_STATIC,9,65,33,9
+    EDITTEXT        IDC_RIGHT_EDIT,45,62,46,12,ES_AUTOHSCROLL
+    LTEXT           "曲线宽度",IDC_STATIC,9,82,33,9
+    LTEXT           "曲线颜色",IDC_STATIC,9,99,33,9
+    COMBOBOX        IDC_LINEWIDTH_COMBO,45,79,46,49,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINECOLOR_COMBO,45,96,46,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "线性",IDC_LINE_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,101,24,28,8
+    CONTROL         "对数",IDC_LOG_RADIO,"Button",BS_AUTORADIOBUTTON,101,36,
+                    30,8
+    GROUPBOX        "刻度类型",IDC_STATIC,94,7,45,50
+END
+
+IDD_BUSYMESSAGE DIALOGEX 0, 0, 245, 68
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    ICON            IDI_ICON_SOFT,IDC_STATIC,14,12,21,21
+    LTEXT           "Busy",IDC_BUSY,10,43,222,9,SS_NOTIFY
+    LTEXT           "搜索本地计算机资源...",IDC_WAITMSG,43,18,183,15,
+                    SS_NOPREFIX
+    GROUPBOX        "",IDC_STATIC,6,3,232,58
+END
+
+IDD_CURVE_BASE DIALOGEX 0, 0, 218, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "数据"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_NAME,28,27,76,225,CBS_DROPDOWN | CBS_SORT | 
+                    CBS_UPPERCASE | WS_VSCROLL
+    EDITTEXT        IDC_ALIAS_NAME,28,46,182,12,ES_AUTOHSCROLL | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_UNIT,134,27,76,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_SDEP,86,108,52,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDEP,86,131,53,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    CONTROL         "",IDC_SLIDER_SDEP,"msctls_trackbar32",TBS_NOTICKS,10,
+                    120,197,11
+    CONTROL         "",IDC_SLIDER_EDEP,"msctls_trackbar32",TBS_NOTICKS,10,
+                    142,197,11
+    EDITTEXT        IDC_WELLNAME,28,8,149,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_WANTRETURN
+    PUSHBUTTON      "查询",IDC_BROWSE_WELL,179,7,31,13
+    LTEXT           "井名",IDC_STATIC,9,10,16,9
+    LTEXT           "别名",IDC_STATIC,9,49,17,9
+    LTEXT           "结束深度",IDC_STATIC_DEPTO,51,133,33,9
+    LTEXT           "单位",IDC_STATIC,113,29,17,9
+    LTEXT           "曲线",IDC_STATIC,9,30,16,9
+    LTEXT           "0000",IDC_STATIC_SDEP,142,110,39,8
+    LTEXT           "9999",IDC_STATIC_EDEP,142,133,42,8
+    GROUPBOX        "绘图深度",IDC_STATIC,7,91,203,75
+    EDITTEXT        IDC_NAME1,111,145,53,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "起始深度",IDC_STATIC_DEPTO3,51,110,33,9
+    EDITTEXT        IDC_SCRIPNAME,28,65,149,12,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    PUSHBUTTON      "查询",IDC_BROWSE_WELL2,178,64,31,13
+    LTEXT           "标注",IDC_STATIC,9,67,16,9
+END
+
+IDD_PROJECT_BROWSE DIALOGEX 0, 0, 335, 267
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "测井项目查询"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,281,6,46,14
+    CONTROL         "",IDC_WELLTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | WS_TABSTOP,7,27,127,215,WS_EX_STATICEDGE
+    EDITTEXT        IDC_WELLNAME,8,7,269,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_WELL_LISTCTRL,"SysListView32",LVS_ALIGNLEFT | 
+                    WS_TABSTOP,148,38,171,103,WS_EX_STATICEDGE
+    CONTROL         "",IDC_PROJECT_LISTCTRL,"SysListView32",LVS_SINGLESEL | 
+                    LVS_ALIGNLEFT | WS_TABSTOP,148,169,171,85,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "查询所有工区",IDC_BROWSE_ALL,6,244,129,15
+    GROUPBOX        "油气井选择",IDC_STATIC,140,23,188,125
+    GROUPBOX        "测井项目选择",IDC_STATIC,140,154,188,106
+END
+
+IDD_CURVE_PAGE DIALOGEX 0, 0, 218, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "风格"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_LEFT_VALUE,60,18,49,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RIGHT_VALUE,60,37,49,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SCALE_TYPE,61,56,49,41,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CURVE_WIDTH,145,18,58,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CURVEWIDTH_SPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,175,17,12,13
+    COMBOBOX        IDC_CURVE_STYLE,144,57,60,193,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "线型",IDC_STATIC,120,7,90,68,WS_GROUP
+    GROUPBOX        "刻度",IDC_STATIC,8,7,109,68
+    LTEXT           "左刻度值",IDC_STATIC,18,22,35,9
+    LTEXT           "右刻度值",IDC_STATIC,18,41,35,9
+    LTEXT           "刻度类型",IDC_STATIC,19,59,35,9
+    LTEXT           "宽度",IDC_STATIC,126,20,16,9
+    LTEXT           "颜色",IDC_STATIC,126,39,17,9
+    LTEXT           "风格",IDC_STATIC,126,59,17,9
+    CONTROL         "",IDC_PREVIEW,"Static",SS_WHITERECT,86,148,118,12
+    GROUPBOX        "预览",IDC_STATIC,81,136,129,31
+    GROUPBOX        "绘图方式",IDC_STATIC,8,81,202,49
+    CONTROL         "剪裁",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    13,97,30,9
+    CONTROL         "自由",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,48,97,28,9
+    CONTROL         "在父道内双比例",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,
+                    119,97,69,9
+    CONTROL         "曲线缺省值处断开",IDC_EBANLE_EDIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,83,112,80,12
+    CONTROL         "",IDC_CURVE_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    144,37,59,12
+    CONTROL         "双比例",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,79,97,36,
+                    9
+    GROUPBOX        "滤波系数",IDC_STATIC,8,136,68,31
+    EDITTEXT        IDC_FILTERNUM,14,150,56,12,ES_AUTOHSCROLL
+    CONTROL         "显示曲线数据",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,13,
+                    111,61,15
+END
+
+IDD_CURVE_FILL DIALOGEX 0, 0, 218, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "填充"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_SELECT_LIST,7,73,53,93,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_UNSELECT_LIST,89,73,51,93,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "删除",ID_DEL,62,116,25,13
+    PUSHBUTTON      "添加",ID_ADD,62,95,25,13,NOT WS_TABSTOP
+    EDITTEXT        IDC_SELECT_CURVE,44,27,63,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_WANTRETURN
+    COMBOBOX        IDC_FILL_PATTERN,137,25,73,197,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FILL_TEXT,44,46,165,12,ES_AUTOHSCROLL
+    CONTROL         "左边",IDC_LEFT,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,150,86,30,10
+    CONTROL         "右边",IDC_RIGHT,"Button",BS_AUTORADIOBUTTON,150,101,30,
+                    10
+    CONTROL         "中间对称",IDC_LR,"Button",BS_AUTORADIOBUTTON,150,116,44,
+                    10
+    CONTROL         "两边对称",IDC_LR2,"Button",BS_AUTORADIOBUTTON,150,131,
+                    44,10
+    LTEXT           "目标曲线",IDC_STATIC,7,29,32,9
+    LTEXT           "原始曲线",IDC_STATIC,7,10,32,9
+    EDITTEXT        IDC_SOURCE_CURVE,44,7,64,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_WANTRETURN
+    LTEXT           "颜色",IDC_STATIC,118,9,16,9
+    LTEXT           "图案",IDC_STATIC,117,28,16,9
+    LTEXT           "填充说明",IDC_STATIC,7,47,33,9
+    GROUPBOX        "填充方式",IDC_STATIC,145,70,64,96
+    CONTROL         "填充刻度区",IDC_HEAD_SHOW_FILL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,151,153,52,9
+    LTEXT           "已选择",IDC_STATIC,21,64,25,8
+    LTEXT           "可选择",IDC_STATIC,101,64,25,8
+    CONTROL         "",IDC_FILL_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,137,
+                    7,72,13
+END
+
+IDD_MIN_FONT DIALOGEX 0, 0, 218, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "字体"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "对象",IDC_STATIC,8,10,16,10
+    COMBOBOX        IDC_ITEM,26,8,183,160,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "内容",IDC_STATIC,8,27,17,10
+    EDITTEXT        IDC_TEXT,26,25,183,41,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "字体",IDC_STATIC,7,73,16,10
+    COMBOBOX        IDC_FONT,26,70,76,252,CBS_DROPDOWN | CBS_OWNERDRAWFIXED | 
+                    CBS_AUTOHSCROLL | CBS_SORT | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "颜色",IDC_STATIC,110,73,16,11
+    LTEXT           "大小",IDC_STATIC,7,91,17,10
+    COMBOBOX        IDC_FONT_SIZE,26,88,76,283,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "风格",IDC_STATIC,110,91,16,11
+    COMBOBOX        IDC_FONT_STYLE,130,89,79,71,CBS_SIMPLE | CBS_AUTOHSCROLL | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "样例",IDC_STATIC,7,107,118,60
+    CONTROL         "",IDC_HSAMPRECT,"Static",SS_WHITERECT,11,121,109,33
+    CONTROL         "",IDC_VSAMPRECT,"Static",SS_WHITERECT | NOT WS_VISIBLE,
+                    45,115,40,45
+    CONTROL         "垂直",IDC_ROTATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    130,156,41,9
+    CONTROL         "",IDC_FOREGROUND,"Button",BS_OWNERDRAW | WS_TABSTOP,130,
+                    70,78,13
+END
+
+IDD_TRACK_BASE DIALOGEX 0, 0, 218, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "风格"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TRACK_SDEP,59,21,49,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRACK_EDEP,59,38,49,12,ES_AUTOHSCROLL
+    CONTROL         "深度区",IDC_SHOW_DEPTH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,25,40,12
+    CONTROL         "标题区",IDC_SHOW_TITLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,41,40,12
+    CONTROL         "左边",IDC_DEPTH_TRACK_LEFT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,61,111,29,9
+    CONTROL         "右边",IDC_DEPTH_TRACK_RIGHT,"Button",BS_AUTORADIOBUTTON,
+                    125,111,30,9
+    CONTROL         "中间",IDC_DEPTH_TRACK_CENTER,"Button",
+                    BS_AUTORADIOBUTTON,91,111,29,9
+    CONTROL         "左边",IDC_DEPTH_VALUE_LEFT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,62,129,28,9
+    CONTROL         "右边",IDC_DEPTH_VALUE_RIGHT,"Button",BS_AUTORADIOBUTTON,
+                    92,129,28,9
+    CONTROL         "中间",IDC_DEPTH_VALUE_CENTER,"Button",
+                    BS_AUTORADIOBUTTON,125,129,28,9
+    CONTROL         "不显示",IDC_DEPTH_VALUE_DISVISIBLE,"Button",
+                    BS_AUTORADIOBUTTON,158,129,36,9
+    GROUPBOX        "深度风格",IDC_STATIC,7,94,203,54
+    LTEXT           "起始深度",IDC_STATIC,15,24,35,10
+    LTEXT           "结束深度",IDC_STATIC,15,41,36,10
+    GROUPBOX        "绘图深度",IDC_STATIC,7,8,106,81
+    GROUPBOX        "绘图选项",IDC_STATIC,118,8,92,81
+    CONTROL         "能改变道宽度",IDC_TRACKRESIZE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,71,61,12
+    CONTROL         "深度标尺",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,56,45,12
+    CONTROL         "测井分层标注尾部为半角上标",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,153,179,9
+    LTEXT           "顺时针旋转",IDC_STATIC,16,73,40,9
+    EDITTEXT        IDC_EDIT_ANGLE,59,71,49,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRACK_DEPSCAL,59,54,49,12,ES_AUTOHSCROLL
+    LTEXT           "深度比例",IDC_STATIC,15,56,36,10
+    LTEXT           "深度区位置",IDC_STATIC,15,111,40,9
+    LTEXT           "深度值位置",IDC_STATIC,15,129,40,9
+END
+
+IDD_LAYER_PAGE DIALOGEX 0, 0, 218, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "层位"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_FILENAME,7,8,170,13,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "查询",IDC_BROWSE,179,7,32,13
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_BORDER,7,22,203,144
+    CONTROL         "",IDC_COMBO1,"ComboBoxEx32",CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_VSCROLL,71,18,54,275
+    CONTROL         "",IDC_COMBO2,"ComboBoxEx32",CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP,123,18,54,275
+END
+
+IDD_FILL_LIST DIALOGEX 0, 0, 218, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "填充"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "对象",IDC_STATIC,9,9,25,9
+    COMBOBOX        IDC_FILL_ITEM,9,20,90,91,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "颜色",IDC_STATIC,9,41,25,10
+    LTEXT           "风格",IDC_STATIC,9,75,24,10
+    COMBOBOX        IDC_PATTERN_STYLE,9,86,90,214,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "系统缺省填充图案",IDC_PATTERN_SYSTEM,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,128,77,9
+    CONTROL         "岩性符号",IDC_PATTERN_LTH,"Button",BS_AUTORADIOBUTTON,
+                    16,143,45,9
+    GROUPBOX        "预览",IDC_STATIC,106,7,104,153
+    CONTROL         "",IDC_PATTERN_PREVIEW,"Static",SS_WHITERECT,113,22,90,
+                    131
+    GROUPBOX        "图案",IDC_STATIC,9,110,89,50
+    CONTROL         "",IDC_PATTERN_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    9,52,89,13
+END
+
+IDD_LINE_LIST DIALOGEX 0, 0, 218, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "框线"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "对象",IDC_STATIC,11,9,19,10
+    COMBOBOX        IDC_LINE_ITEM,12,20,90,266,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "颜色",IDC_STATIC,12,40,23,9
+    LTEXT           "风格",IDC_STATIC,12,72,19,9
+    COMBOBOX        IDC_LINE_STYLE,12,83,90,212,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "宽度",IDC_STATIC,12,104,27,9
+    EDITTEXT        IDC_LINE_WIDTH,12,115,88,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LINE_WIDTH_SPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,42,102,12,13
+    GROUPBOX        "预览",IDC_STATIC,107,8,103,158
+    CONTROL         "",IDC_LINE_PREVIEW,"Static",SS_WHITERECT,113,19,92,140
+    CONTROL         "",IDC_LINE_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,12,
+                    51,89,14
+END
+
+IDD_GRID_PAGE DIALOGEX 0, 0, 218, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "格线"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "对象",IDC_STATIC,104,9,16,10
+    COMBOBOX        IDC_GRID_SELECT_ITEM,122,7,89,175,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "颜色",IDC_STATIC,104,25,16,10
+    EDITTEXT        IDC_GRID_LINENUM,107,50,47,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_GRID_SPIN_LINENUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,146,51,11,11
+    EDITTEXT        IDC_GRID_LINE_WIDTH,160,50,46,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_GRID_SPIN_LINEWIDTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,182,50,11,10
+    CONTROL         "纵线",IDC_GRID_VERLINE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,115,80,30,9
+    CONTROL         "横线",IDC_GRID_HORLINE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,115,94,30,9
+    EDITTEXT        IDC_GRID_LEFT_VALUE,107,149,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRID_RIGHT_VALUE,160,149,47,12,ES_AUTOHSCROLL
+    CONTROL         "线性",IDC_GRID_LINE_TYPE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP | WS_TABSTOP,114,118,29,9
+    CONTROL         "对数",IDC_GRID_LOG_TYPE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,145,118,28,9
+    GROUPBOX        "",IDC_TRACK_GRID,7,4,92,162
+    GROUPBOX        "",IDC_GRID_STATIC_TYPE,103,109,108,23
+    CONTROL         "穿透",IDC_VERT_OPAQUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,155,80,30,9
+    CONTROL         "穿透",IDC_HORI_OPAQUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,155,94,27,9
+    GROUPBOX        "",IDC_STATIC,103,68,108,41
+    GROUPBOX        "左值--右值",IDC_STATIC,103,137,108,30
+    GROUPBOX        "间隔--宽度",IDC_STATIC,103,39,108,29
+    CONTROL         "",IDC_GRID_LINE_COLOR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,121,22,90,11
+    CONTROL         "倾角",IDC_GRID_DIP_TYPE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,177,118,28,9
+END
+
+IDD_PAGE_SETUP DIALOGEX 0, 0, 256, 126
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "版面设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,177,39,50,14
+    EDITTEXT        IDC_LEFT_SPACE,116,79,39,12,ES_AUTOHSCROLL,0,
+                    HIDC_LEFT_SPACE
+    LTEXT           "左边距",IDC_STATIC_LEFT_SPACE,88,82,24,9,0,0,
+                    HIDC_STATIC_LEFT_SPACE
+    LTEXT           "右边距",IDC_STATIC,88,102,24,9
+    LTEXT           "顶边距",IDC_STATIC,13,83,26,9
+    LTEXT           "底边距",IDC_STATIC,14,102,26,9
+    EDITTEXT        IDC_RIGHT_SPACE,116,99,39,12,ES_AUTOHSCROLL,0,
+                    HIDC_RIGHT_SPACE
+    EDITTEXT        IDC_TOP_SPACE,42,81,40,12,ES_AUTOHSCROLL,0,
+                    HIDC_TOP_SPACE
+    EDITTEXT        IDC_BOTTOM_SPACE,42,100,40,12,ES_AUTOHSCROLL,0,
+                    HIDC_BOTTOM_SPACE
+    LTEXT           "版面整体度宽",IDC_STATIC,7,9,49,9
+    EDITTEXT        IDC_PAGE_WIDTH,59,7,101,12,ES_AUTOHSCROLL,0,
+                    HIDC_PAGE_WIDTH
+    EDITTEXT        IDC_HEADTOP_SPACE,13,44,43,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEADBOTTOM_SPACE,60,44,44,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PAGE_HEIGHT,108,44,44,12,ES_AUTOHSCROLL
+    LTEXT           "顶边距",IDC_STATIC,23,34,26,9
+    LTEXT           "底边距",IDC_STATIC,71,34,26,9
+    LTEXT           "高度",IDC_STATIC,123,34,26,9
+    GROUPBOX        "图头区",IDC_STATIC,7,22,153,41
+    GROUPBOX        "曲线区",IDC_STATIC,7,66,154,53
+    LTEXT           "注: 设置以毫米为单位",IDC_STATIC,169,101,80,11
+END
+
+IDD_RESULT_PAGE DIALOGEX 0, 0, 218, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "数据"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "左边",IDC_LEFT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    44,157,27,9
+    CONTROL         "右边",IDC_RIGHT,"Button",BS_AUTORADIOBUTTON,75,157,28,9
+    CONTROL         "变宽度",IDC_RIGHT2,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,105,157,36,9
+    DEFPUSHBUTTON   "查询",IDC_BROWSE_WELL,180,9,31,13
+    LTEXT           "标注位置",IDC_STATIC1,8,156,32,10
+    EDITTEXT        IDC_WELLNAME,7,9,171,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_RESULTLIST,"SysListView32",LVS_ALIGNLEFT | 
+                    WS_TABSTOP,7,24,204,131,WS_EX_CLIENTEDGE
+END
+
+IDD_WELL_BROWSE DIALOGEX 0, 0, 335, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "油气井查询"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,278,7,50,14
+    CONTROL         "",IDC_WELLTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | WS_TABSTOP,7,27,127,140,WS_EX_STATICEDGE
+    EDITTEXT        IDC_WELLNAME,8,7,269,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_WELL_LISTCTRL,"SysListView32",LVS_ALIGNLEFT | 
+                    WS_TABSTOP,141,27,187,156,WS_EX_STATICEDGE
+    PUSHBUTTON      "查询所有工区",IDC_BROWSE_ALL,7,168,129,15
+END
+
+IDD_IMAGE DIALOGEX 0, 0, 208, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "风格"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_LEFT,45,8,64,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RIGHT,45,23,64,12,ES_AUTOHSCROLL
+    LTEXT           "低刻度值",IDC_STATIC,9,10,36,9
+    LTEXT           "高刻度值",IDC_STATIC,9,24,32,9
+    GROUPBOX        "灰度级别",IDC_STATIC,115,4,86,30
+    GROUPBOX        "颜色方案",IDC_STATIC,7,41,194,53
+    CONTROL         "电导率数据",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,142,55,54,9
+    COMBOBOX        IDC_COMBO_CRMOLDL,12,53,125,162,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "钻头直径(毫米)",IDC_STATIC,13,111,56,9
+    EDITTEXT        IDC_BIT,73,109,45,12,ES_AUTOHSCROLL
+    LTEXT           "横向绘图比例",IDC_STATIC,13,127,55,9
+    EDITTEXT        IDC_HOR_SCALE,73,124,45,12,ES_AUTOHSCROLL
+    GROUPBOX        "图像宽度",IDC_STATIC,7,98,117,46
+    CONTROL         "Gradient",IDC_GRADIENT,"MFCGradientCtrl",WS_TABSTOP,12,
+                    72,184,16,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_COLORGRADE,121,17,74,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,185,13,12,
+                    17
+    GROUPBOX        "背景色",IDC_STATIC,128,98,73,46
+    CONTROL         "",IDC_BKCOLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,134,
+                    124,61,12
+    LTEXT           "盲区显示颜色",IDC_STATIC,134,111,49,9
+END
+
+IDD_IMAGE_BASE DIALOGEX 0, 0, 211, 159
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "数据"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_WELLNAME,27,7,149,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALIAS_NAME,27,45,177,12,ES_AUTOHSCROLL | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_UNIT,130,26,74,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "浏览",IDC_BROWSE_WELL,178,7,26,12,NOT WS_TABSTOP
+    LTEXT           "井名",IDC_STATIC,8,9,16,9
+    LTEXT           "别名",IDC_STATIC,7,48,17,9
+    LTEXT           "单位",IDC_STATIC,111,28,16,9
+    COMBOBOX        IDC_NAME,27,25,78,225,CBS_DROPDOWN | CBS_SORT | 
+                    CBS_UPPERCASE | WS_VSCROLL
+    LTEXT           "曲线",IDC_STATIC,7,29,20,9
+    EDITTEXT        IDC_SDEP,48,81,49,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDEP,142,80,56,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    CONTROL         "",IDC_SLIDER_SDEP,"msctls_trackbar32",TBS_NOTICKS,10,
+                    120,193,11
+    CONTROL         "",IDC_SLIDER_EDEP,"msctls_trackbar32",TBS_NOTICKS,10,
+                    131,193,11
+    LTEXT           "结束深度",IDC_STATIC_DEPTO,107,83,33,9
+    LTEXT           "0000",IDC_STATIC_SDEP,13,141,39,9
+    RTEXT           "9999",IDC_STATIC_EDEP,158,141,42,9
+    GROUPBOX        "绘图深度",IDC_STATIC,7,64,197,37
+    LTEXT           "起始深度",IDC_STATIC_DEPTO3,13,82,33,9
+    GROUPBOX        "文件深度",IDC_STATIC,7,106,197,46
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PROPPAGE_PREVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 548
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 395
+    END
+
+    IDD_PLOT_DEPTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_SET_WIDTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_SET_HEIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    CG_IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_CURVE_ATTDLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_BUSYMESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_CURVE_BASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_PROJECT_BROWSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+        HORZGUIDE, 156
+    END
+
+    IDD_CURVE_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_CURVE_FILL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_MIN_FONT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_TRACK_BASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_LAYER_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_FILL_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_LINE_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_GRID_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_PAGE_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_RESULT_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_WELL_BROWSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_IMAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_IMAGE_BASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_SELECT       CURSOR                  "res\\Cur134.cur"
+IDC_CURSOR_CROSS        CURSOR                  "res\\H_cross.cur"
+IDC_CURSOR_SIZENS       CURSOR                  "res\\Ne_05.cur"
+IDC_CURSOR_SIZEWE       CURSOR                  "res\\Normal07.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POP_MENU MENU 
+BEGIN
+    POPUP "POPMENU"
+    BEGIN
+        MENUITEM "刷新",                        ID_DOCDATA_UPDATE
+    END
+END
+
+IDR_POP_ADMINMENU MENU 
+BEGIN
+    POPUP "ADD"
+    BEGIN
+        MENUITEM "属性(&R)",                    32772
+        MENUITEM "删除",                        57635
+        MENUITEM SEPARATOR
+        MENUITEM "添加格线道",                  ID_ADD_TRACK
+        MENUITEM "添加常规曲线",                ID_ADD_CURVE
+        MENUITEM SEPARATOR
+        MENUITEM "版面设置",                    ID_SETUP_PAGE
+        MENUITEM "深度设置",                    ID_SET_DEPTH
+        MENUITEM "匹配当前项目",                ID_MATCH_ALLOBJECT
+        MENUITEM SEPARATOR
+        MENUITEM "保存BMP文件到本地",           32871
+        MENUITEM "保存当前项目到本地",          ID_FILE_SAVE_DATA
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_SOFT           ICON                    "res\\LogShell.ico"
+IDI_ICON_DB             ICON                    "res\\STEREO.ICO"
+IDI_ICONWELL            ICON                    "res\\WELL.ICO"
+IDI_ICONWELLOPEN        ICON                    "res\\WELLOPEN.ICO"
+IDI_ICONCURRENTUSER     ICON                    "res\\CURRENTUSER.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MIN_FONT DLGINIT
+BEGIN
+    IDC_FONT_STYLE, 0x403, 5, 0
+0xfdd5, 0xa3b3, "\000" 
+    IDC_FONT_STYLE, 0x403, 5, 0
+0xe3c7, 0xb1d0, "\000" 
+    IDC_FONT_STYLE, 0x403, 5, 0
+0xd3bc, 0xd6b4, "\000" 
+    IDC_FONT_STYLE, 0x403, 9, 0
+0xd3bc, 0xd6b4, 0xe3c7, 0xb1d0, "\000" 
+    0
+END
+
+IDD_IMAGE DLGINIT
+BEGIN
+    IDC_COMBO_CRMOLDL, 0x403, 1, 0
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PREVIEW             "PreView Control"
+    IDS_PREVIEW_PPG         "PreView Property Page"
+    IDS_PREVIEW_PPG_CAPTION "属性"
+    IDS_NO_CURVE            "曲线别名不能为空"
+    IDS_LEFTBOUNDARY        "左边界"
+    IDS_RIGHTBOUNDARY       "右边界"
+    IDS_CURVE_ALIASNAME_ER  "曲线别名错误"
+    IDS_PRINTER_ERROR       "不能产生打印DC"
+    IDS_ITALICBOLD          "加粗倾斜"
+    IDS_BOLD                "加粗"
+    IDS_ITALIC              "倾斜"
+    IDS_NORMAL              "正常"
+    IDS_NULL_INPUT          "无效的输入数字"
+    IDS_ERROR_DIMENSION     "无效的尺寸大小"
+    IDS_ALIASFONT           "别名字体"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ZERFONT             "刻度字体"
+    IDS_DEPTHTHINLINE       "深度细线"
+    IDS_DEPTHMIDLINE        "深度中线"
+    IDS_DEPTHBOLDLINE       "深度粗线"
+    IDS_ZERTHINLINE         "刻度细线"
+    IDS_ZERBOLDLINE         "刻度粗线"
+    IDS_FRAMEFILL           "框填充"
+    IDS_HEADFILL            "标题区填充"
+    IDS_ZERHEADFILL         "刻度区填充"
+    IDS_DRAWREGIONFILL      "曲线区填充"
+    IDS_DEPTHREGIONFILL     "深度区填充"
+    IDS_FRAMELINE           "框线"
+    IDS_MARGIN_TOO_BIG      "左右边距和大于宽度"
+    IDS_RESULTFONT          "解释符号"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SET_DEPTH            "设置绘图深度范围、深度比例"
+    ID_MATCH_ALLOBJECT      "用当前测井项目绘图"
+    ID_ADD_CURVE            "在文档中添加常规二维曲线\n添加常规曲线"
+    ID_ADD_TRACK            "在文档中添加一个格线道\n添加格线道"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CUT             "从绘图文档中删除选择对象"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SETUP_PAGE           "设置绘图区大小\n版面"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_SAVE_BMP        "将当绘图文档保存为BMP文件到本地"
+    ID_FILE_SAVE_DATA       "以FID数据格式将当前测井项目保存到本地"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

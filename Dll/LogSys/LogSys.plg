@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LogSys - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP1E6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "FWD_CHINESE" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXEXT" /D "_AFXDLL" /Fp".\Release/LogSys.pch" /YX /Fo".\Release/" /Fd".\Release/" /FD /c 
+"E:\GeoReveal\Dll\LogSys\LogProcess.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP1E6.tmp"" 
+Creating temporary file "C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP1E7.tmp" with contents
+[
+FIDio.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\\LinkLib/LogSys.pdb" /machine:I386 /def:".\LogSys.def" /out:"D:\测井解释平台\System\LogSys.dll" /implib:"..\..\\LinkLib/LogSys.lib" /libpath:"..\..\LinkLib" 
+.\Release\Editdlg.obj
+.\Release\LogProcess.obj
+.\Release\LogSys.obj
+.\Release\ParameterEdit.obj
+.\Release\StdAfx.obj
+.\Release\LogSys.res
+]
+Creating command line "link.exe @"C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP1E7.tmp""
+<h3>Output Window</h3>
+Compiling...
+LogProcess.cpp
+Linking...
+   Creating library ..\..\\LinkLib/LogSys.lib and object ..\..\\LinkLib/LogSys.exp
+
+
+
+<h3>Results</h3>
+LogSys.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

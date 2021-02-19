@@ -1,0 +1,470 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "LogSysRes.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "LogSysRes.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\LogSys.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CHANGEDEPTH DIALOGEX 0, 0, 190, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "深度修改"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_DEP,13,30,109,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认",IDOK,127,10,53,15
+    PUSHBUTTON      "取消",IDCANCEL,127,27,53,14
+    CTEXT           "输入深度值",IDC_STATIC,13,13,41,12
+    LTEXT           "深度值必须大于",IDC_STATIC,7,56,59,12
+    LTEXT           "小于",IDC_STATIC,108,56,17,12
+    EDITTEXT        IDC_SDEP,70,56,30,12,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDEP,129,56,33,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER
+END
+
+IDD_EDITDLG DIALOGEX 50, 50, 453, 305
+STYLE DS_3DLOOK | DS_CENTER | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "文本编辑器"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDITBOX,0,0,453,305,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_INPUT_TABNAME DIALOGEX 0, 0, 195, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "参数组名称"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,134,15,51,15
+    PUSHBUTTON      "取消",IDCANCEL,134,33,51,14
+    CTEXT           "参数组名称",IDC_STATIC,25,15,62,11
+    EDITTEXT        IDC_TABNAME,7,33,121,13,ES_AUTOHSCROLL
+END
+
+IDD_ParameterEdit DIALOGEX 0, 0, 452, 250
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CONTEXTHELP
+CAPTION "参数编辑器"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_CONCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | 
+                    WS_BORDER | WS_TABSTOP,5,59,203,170,WS_EX_STATICEDGE
+    CONTROL         "List1",IDC_DEFAULTCONCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | LVS_AUTOARRANGE | 
+                    WS_BORDER | WS_TABSTOP,210,59,109,170,WS_EX_ACCEPTFILES | 
+                    WS_EX_STATICEDGE
+    CONTROL         "List1",IDC_INCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | LVS_SHAREIMAGELISTS | 
+                    LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,326,60,119,67,
+                    WS_EX_STATICEDGE
+    CONTROL         "List1",IDC_OUTCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | LVS_SHAREIMAGELISTS | 
+                    LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,326,143,119,67,
+                    WS_EX_RTLREADING | WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "确认",IDOK,327,215,57,13
+    PUSHBUTTON      "取消",IDCANCEL,387,215,58,13
+    CONTROL         "Tab1",IDC_CONTAB,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN | TCS_TOOLTIPS,4,45,204,14,
+                    WS_EX_NOPARENTNOTIFY | WS_EX_ACCEPTFILES | WS_EX_RIGHT | 
+                    WS_EX_RTLREADING | WS_EX_LEFTSCROLLBAR | 
+                    WS_EX_CONTROLPARENT
+    LTEXT           "",IDC_RULER,4,0,441,32,SS_NOTIFY,WS_EX_STATICEDGE
+    LTEXT           "处理参数",IDC_STATIC,212,47,32,11
+    LTEXT           "输入曲线数",IDC_STATIC,327,48,41,11
+    LTEXT           "输出曲线数",IDC_STATIC,328,131,41,11
+    EDITTEXT        IDC_EDIT,73,233,38,12,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE | NOT WS_BORDER,WS_EX_STATICEDGE
+    COMBOBOX        IDC_COMBO,121,111,45,80,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | CBS_UPPERCASE | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Slider1",IDC_DEPSLIDER,"msctls_trackbar32",TBS_TOP | 
+                    TBS_NOTICKS | WS_TABSTOP,15,33,415,10
+    PUSHBUTTON      "-",IDC_ZOOMIN,4,34,12,7
+    PUSHBUTTON      "+",IDC_ZOOMOUT,432,33,13,8
+    LTEXT           "Static",IDC_NOC,248,47,59,12
+    LTEXT           "Static",IDC_NOI,372,48,53,9
+    LTEXT           "Static",IDC_NOO,373,131,46,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CHANGEDEPTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_EDITDLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 452
+    END
+
+    IDD_INPUT_TABNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_ParameterEdit, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 445
+        BOTTOMMARGIN, 245
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ADDTAB              BITMAP  DISCARDABLE     "res\\deltab.bmp"
+IDB_ADDTAB1             BITMAP  DISCARDABLE     "res\\addtab1.bmp"
+IDB_CHTAB               BITMAP  DISCARDABLE     "res\\addtab2.bmp"
+IDB_CHTAB1              BITMAP  DISCARDABLE     "res\\addtab3.bmp"
+IDB_DELTAB              BITMAP  DISCARDABLE     "res\\deladdta.bmp"
+IDB_DELTAB1             BITMAP  DISCARDABLE     "res\\deltab1.bmp"
+IDB_RULER               BITMAP  DISCARDABLE     "res\\rulerup.bmp"
+IDB_RULERM              BITMAP  DISCARDABLE     "res\\ruler1.bmp"
+IDB_SAVEDEFAULTPARA     BITMAP  DISCARDABLE     "res\\savepara.bmp"
+IDB_SAVEDEFAULTPARA1    BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+IDB_SAVEPARA            BITMAP  DISCARDABLE     "res\\savetab2.bmp"
+IDB_SAVEPARA1           BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDB_SAVETAB             BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_SAVETAB1            BITMAP  DISCARDABLE     "res\\savetab1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_DELICON             CURSOR  DISCARDABLE     "res\\drag1.cur"
+IDC_DRAG                CURSOR  DISCARDABLE     "RES\\CUR134.CUR"
+IDC_MOVE                CURSOR  DISCARDABLE     "res\\cursor1.cur"
+IDC_MOVEDOWNICON        CURSOR  DISCARDABLE     "res\\moveupic.cur"
+IDC_MOVEUPICON          CURSOR  DISCARDABLE     "res\\delcon1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+CG_IDR_POPUP_RULER MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "拆分深度段(&S)",              ID_DEPTH_SPLIT
+        MENUITEM "取消深度段(&D)",              ID_DEPTH_DELETE
+        MENUITEM "修改深度(&C)",                ID_DEPTH_CHANGE
+    END
+END
+
+IDR_EDITMENU MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_EDIT_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_EDIT_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_EDIT_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "恢复(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "删除(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "粘贴(&V)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "清除(&L)\tDel",               ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "搜索(&F)\tAlt+F3",            ID_EDIT_FIND
+        MENUITEM "继续(&N)\tF3",                ID_EDIT_NEXT
+        MENUITEM "替换(&R)\tAlt+R",             ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "选择全部(&A)",                ID_EDIT_SELECT_ALL
+        MENUITEM "只读(&E)",                    ID_EDIT_READONLY
+    END
+    POPUP "字体(&F)"
+    BEGIN
+        MENUITEM "字体(&F)...",                 ID_FONT_FONTSET
+    END
+    POPUP "帮助(&H)", HELP
+    BEGIN
+        MENUITEM "编辑器帮助(&H)",              ID_EDITOR_HELP_INDEX
+        MENUITEM SEPARATOR
+    END
+END
+
+IDR_PARAMETERMEDITMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "参数组(&G)"
+    BEGIN
+        MENUITEM "增加参数分组(&A)",            IDC_ADDTAB
+        MENUITEM "删除该参数分组(&D)",          IDC_DELTAB
+        MENUITEM "改变该参数组名称(&C)",        IDC_CHTAB
+    END
+    POPUP "保存(&S)"
+    BEGIN
+        MENUITEM "保存参数卡片(&F)",            IDC_SAVEPARA
+        MENUITEM "保存为缺省参数卡片(&D)",      IDC_SAVEDEFAULTPARA
+        MENUITEM "保存该参数分组模板(&T)",      IDC_SAVETAB
+    END
+    MENUITEM "文本编辑(&E)",                ID_EDIT
+    MENUITEM "帮助(&H)",                    IDC_TEXTHELP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "四川石油测井公司\0"
+            VALUE "FileDescription", "\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "基本输入输出动态库 1.0\0"
+            VALUE "Language", "中文(简体)\0"
+            VALUE "LegalCopyright", "Copyright 1999 2000 2001\0"
+            VALUE "LegalTrademarks", "面向对象测井处理接口\0"
+            VALUE "OriginalFilename", "LogSys.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "基本输入输出动态库\0"
+            VALUE "ProductVersion", "1.0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDP_FILE_NONE       "没有错误产生"
+    AFX_IDP_FILE_GENERIC    "当访问 %1时，产生一个不能识别的错误"
+    AFX_IDP_FILE_NOT_FOUND  "%1  没有发现."
+    AFX_IDP_FILE_BAD_PATH   "%1 包含无效的路径."
+    AFX_IDP_FILE_TOO_MANY_OPEN "由于打开文件太多，%1 不能打开"
+    AFX_IDP_FILE_ACCESS_DENIED " %1  拒绝访问"
+    AFX_IDP_FILE_INVALID_FILE "无效的文件句柄与 %1 联系."
+    AFX_IDP_FILE_REMOVE_CURRENT "当前目录%1 不能删除"
+    AFX_IDP_FILE_DIR_FULL   "目录已满，%1 不能产生"
+    AFX_IDP_FILE_BAD_SEEK   "定位文件 %1 失败"
+    AFX_IDP_FILE_HARD_IO    "当访问%1时，硬件读写错误"
+    AFX_IDP_FILE_SHARING    "当访问%1时，文件共享错误"
+    AFX_IDP_FILE_LOCKING    "当访问%1时，文件锁定错误"
+    AFX_IDP_FILE_DISKFULL   "磁盘盘，当访问%1时."
+    AFX_IDP_FILE_EOF        "企图访问通过 %1 尾."
+    AFX_IDP_FILE_NOSEEK61871 "%1文件不允许定位"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABORT_PROCESS       "是否中断该处理流程"
+    IDS_NO_PARTEMPLATE      "\n参数模板%1不存在\n程序自动采用参数分组空模板进行"
+    IDS_ERROR_PARTEMPLATE   "\n不正确的参数模板%1\n程序自动采用参数分组空模板进行"
+    IDS_NO_PARFILE          "\n参数文件 %1 不存在!程序自动采用空参数卡"
+    IDS_DEFAULT_PARFILE_ERROR "\n缺省参数文件%1打开失败！"
+    IDS_DEPTH_ERROR         "%1\n深度值小于上一段深度！\n该深度段被忽略     "
+    IDS_OPEN_PARFILE_ERROR  "\n参数文件打开失败, 是否使用缺省参数卡进行      "
+    IDS_SAVE_FILE           "文件%1已修改，是否保存    "
+    IDS_WRITE_ERROR         "写错误"
+    IDS_CANNT_WRITE_FILE    "不能写文件%1"
+    IDS_WRITE_HEADFILE_ERROR "写索引文件失败"
+    IDS_WRONG_PARNAME       "%1\n错误的参数名称"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CANNT_CREATE_FILE   "不能产生文件%1"
+    IDS_SAVE_TEMCHA         "%1\n保存当前参数分组模板"
+    IDS_DEL_PARGROUP        "%1\n是否删除该参数组"
+    IDS_WRONG_DEPTH         "深度不正确！\n请重新输入深度"
+    IDS_CANCEL_DEPTH        "是否取消该深度段"
+    IDS_SAVE_PARFILE_CHAN   "\n是否保存当前参数值"
+    IDS_CURVE_NOT_EXIST     "\n曲线%1不存在."
+    IDS_DEL_PARCONSTANT     "\n是否从该组中删除%1参数"
+    IDS_CONSTANT_EXIST      "参数列表中已经有该参数"
+    IDS_CURVE_EXIST         "曲线%1已经存在"
+    IDS_ERROR_RENAME_BODY   "数据文件换名失败"
+    IDS_REPLACE_EXIST_CURVE "曲线%1已经存在\n是否替换该曲线"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PARAMETER_EXIST     "参数%1已经存在"
+    IDS_SAVE_CURRENT_FILE   "保存当前文件"
+    IDS_EDIT_FILE           "编辑文件 - "
+    IDS_EDIT_FILE1          "编辑文件 - 无标题"
+    IDS_FILTER1             "参数文件(*."
+    IDS_FILTER2             "所有文件(I*.*)"
+    IDS_OPEN_FILE_TITLE     "打开参数文件"
+    IDS_VISUALPAR_EDITOR    "参数编辑"
+    IDS_MSG_ZOONOUT         "缩小深度标尺"
+    IDS_MSG_ZOONIN          "放大深度标尺"
+    IDS_MSG_ADD             "增加参数组"
+    IDS_MSG_DEL             "删除参数组"
+    IDS_MSG_NAME            "修改参数组名称"
+    IDS_MSG_SAVETPL         "保存参数分组模板"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_SAVEPARA        "保存参数卡"
+    IDS_MSG_SAVEDP          "保存为缺省参数卡"
+    IDS_MSG_EDIT            "对参数卡进行文本编辑"
+    IDS_MSG_RBUT            "使用右键修改深度"
+    IDS_MSG_HELP            "打开参数编辑器帮助窗口"
+    IDS_MSG_OK              "保存参数卡，开始处理"
+    IDS_MSG_CANCEL          "取消参数卡编辑，退出处理"
+    IDS_NORMALPARA          "一般参数"
+    IDS_OTHERPARA           "其它参数"
+    IDS_PARANAME            "参数名"
+    IDS_PARAVALUE           "缺省值"
+    IDS_PARADRAG            "将参数拖拉到左边的参数列表中"
+    IDS_INCURVE             "曲线名"
+    IDS_RELOC               "重定向"
+    IDS_PARADSP             "说明"
+    IDS_OUTCURVE            "曲线名"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RDEPTH              "鼠标右键修改深度"
+    IDS_LDEPTH              "鼠标左键选择井段，右键分段处理"
+    IDS_DRAGDEL             "将参数拖拉到列表框外删除该参数"
+    IDS_TEXTHELP            "浏览所用计算公式"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\LogSys.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

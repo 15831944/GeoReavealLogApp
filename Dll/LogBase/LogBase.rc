@@ -1,0 +1,298 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\LogBase.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "作者：赵中明\0"
+            VALUE "CompanyName", "四川石油管理局测井公司\0"
+            VALUE "FileDescription", "LogBase DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "LogBase\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "LogBase.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "LogBase Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADDFIELD DIALOGEX 0, 0, 216, 75
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "添加字段"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_NAME,52,7,100,12,ES_UPPERCASE
+    EDITTEXT        IDC_LENGTH,52,24,100,12,ES_NUMBER
+    EDITTEXT        IDC_DECIMALS,52,40,100,12,ES_NUMBER
+    COMBOBOX        IDC_TYPE,52,56,100,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "确认",IDOK,159,19,50,14,BS_CENTER
+    PUSHBUTTON      "取消",IDCANCEL,159,41,50,14,BS_CENTER
+    LTEXT           "字段名称",IDC_STATIC,7,9,38,11,NOT WS_GROUP
+    LTEXT           "长度(Bits)",IDC_LENGTH_STATIC,7,25,42,11,NOT WS_GROUP
+    LTEXT           "类型号",IDC_DECIMALS_STATIC,7,41,36,12,NOT WS_GROUP
+    LTEXT           "字段类型",IDC_STATIC,7,57,36,12
+END
+
+IDD_DIALOG_SETFILTER DIALOGEX 0, 0, 210, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "筛选"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,155,7,45,14
+    PUSHBUTTON      "取消",IDCANCEL,155,24,45,14
+    GROUPBOX        "条件",IDC_STATIC,7,4,143,34
+    EDITTEXT        IDC_EDIT1,12,21,133,12,ES_AUTOHSCROLL
+    GROUPBOX        "字段",IDC_STATIC,7,41,196,33
+    COMBOBOX        IDC_COMBO1,12,55,186,250,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MEMO_EDITOR DIALOGEX 0, 0, 301, 142
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "备注内容"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TEXT,7,7,243,128,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    DEFPUSHBUTTON   "确认",IDOK,255,7,39,14
+    PUSHBUTTON      "取消",IDCANCEL,255,27,39,14
+END
+
+IDD_STRUCTURE DIALOGEX 0, 0, 319, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "数据库结构"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "ListView1",IDC_FIELDS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER,7,8,249,119
+    PUSHBUTTON      "添加(&A)",IDC_ADD,262,7,50,14,BS_CENTER
+    PUSHBUTTON      "修改(&E)",IDC_EDIT,262,25,50,14,BS_CENTER
+    PUSHBUTTON      "删除(&D)",IDC_DELETE,262,43,50,14,BS_CENTER
+    DEFPUSHBUTTON   "确认",IDOK,262,95,50,14,BS_CENTER
+    PUSHBUTTON      "取消",IDCANCEL,262,113,50,14,BS_CENTER
+END
+
+IDD_PROGRESS DIALOGEX 0, 0, 187, 51
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "进度提示"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "Progress1",CG_IDC_PROGDLG_PROGRESS,"msctls_progress32",
+                    0x0,7,31,173,13
+    LTEXT           " 0 %",CG_IDC_PROGDLG_PERCENT,7,7,172,22
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ADDFIELD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_DIALOG_SETFILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_MEMO_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_STRUCTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ADDFIELD DLGINIT
+BEGIN
+    IDC_TYPE, 0x403, 5, 0
+0x4843, 0x5241, "\000" 
+    IDC_TYPE, 0x403, 5, 0
+0x4144, 0x4554, "\000" 
+    IDC_TYPE, 0x403, 8, 0
+0x554e, 0x454d, 0x4952, 0x0043, 
+    IDC_TYPE, 0x403, 8, 0
+0x4f4c, 0x4947, 0x4143, 0x004c, 
+    IDC_TYPE, 0x403, 6, 0
+0x4c46, 0x414f, 0x0054, 
+    IDC_TYPE, 0x403, 5, 0
+0x454d, 0x4f4d, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    CG_IDS_PROGRESS_CAPTION "\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff"
+    CG_IDS_PROGRESS_CAPTION1 "\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\LogBase.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

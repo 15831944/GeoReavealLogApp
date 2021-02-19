@@ -1,0 +1,536 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "PlotRes.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "PlotRes.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Plot.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DEPTH_SCALE DIALOGEX 0, 0, 163, 58
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "深度比例"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,112,13,43,14
+    PUSHBUTTON      "取消",IDCANCEL,112,32,43,13
+    EDITTEXT        IDC_DEPTH_SCALE,21,26,80,14,ES_AUTOHSCROLL
+    GROUPBOX        "深度比例",IDC_STATIC,11,9,96,38
+END
+
+IDD_FILL_LIST DIALOG  0, 0, 181, 165
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "填充"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "对象",IDC_STATIC,13,13,25,10
+    COMBOBOX        IDC_FILL_ITEM,13,25,70,91,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "颜色",IDC_STATIC,13,48,25,11
+    LTEXT           "风格",IDC_STATIC,13,81,24,11
+    COMBOBOX        IDC_PATTERN_STYLE,13,93,71,214,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "常规",IDC_PATTERN_SYSTEM,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,19,133,30,10
+    CONTROL         "特殊",IDC_PATTERN_LTH,"Button",BS_AUTORADIOBUTTON,52,
+                    133,28,10
+    GROUPBOX        "预览",IDC_STATIC,91,13,83,138
+    CONTROL         "",IDC_PATTERN_PREVIEW,"Static",SS_WHITERECT,98,28,69,
+                    115
+    GROUPBOX        "图案",IDC_STATIC,13,117,71,33
+    CONTROL         "",IDC_PATTERN_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    13,59,69,12
+END
+
+IDD_FILL_PATTERN DIALOG  0, 0, 140, 81
+STYLE DS_SETFONT | DS_3DLOOK | WS_CHILD | WS_VISIBLE | WS_CAPTION
+CAPTION "填充"
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_PATTERN_STYLE,10,57,61,221,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "预览",IDC_STATIC,82,7,52,68
+    CONTROL         "",IDC_PATTERN_PREVIEW,"Static",SS_WHITERECT,90,18,35,52
+    GROUPBOX        "风格",IDC_STATIC,6,43,69,32
+    GROUPBOX        "颜色",IDC_STATIC,6,8,69,32
+    CONTROL         "",IDC_PATTERN_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    10,22,60,13
+END
+
+IDD_GRID DIALOGEX 0, 0, 211, 183
+STYLE DS_SETFONT | DS_3DLOOK | WS_CHILD | WS_VISIBLE | WS_CAPTION
+CAPTION "格线"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "对象",IDC_STATIC,100,7,16,11
+    COMBOBOX        IDC_GRID_SELECT_ITEM,118,5,89,175,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "颜色",IDC_STATIC,100,25,16,11
+    EDITTEXT        IDC_GRID_LINENUM,103,52,47,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Spin1",IDC_GRID_SPIN_LINENUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,142,53,11,12
+    EDITTEXT        IDC_GRID_LINE_WIDTH,156,52,46,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Spin2",IDC_GRID_SPIN_LINEWIDTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,178,52,11,11
+    CONTROL         "纵线",IDC_GRID_VERLINE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,111,84,30,10
+    CONTROL         "横线",IDC_GRID_HORLINE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,111,100,30,10
+    EDITTEXT        IDC_GRID_LEFT_VALUE,103,159,48,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRID_RIGHT_VALUE,156,159,47,13,ES_AUTOHSCROLL
+    CONTROL         "线性",IDC_GRID_LINE_TYPE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP | WS_TABSTOP,110,125,29,10
+    CONTROL         "对数",IDC_GRID_LOG_TYPE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,141,125,28,10
+    GROUPBOX        "",IDC_TRACK_GRID,3,2,92,176
+    GROUPBOX        "",IDC_GRID_STATIC_TYPE,99,116,108,25
+    CONTROL         "穿透",IDC_VERT_OPAQUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,151,84,30,10
+    CONTROL         "穿透",IDC_HORI_OPAQUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,151,100,27,10
+    GROUPBOX        "",IDC_STATIC,99,72,108,44
+    GROUPBOX        "左值--右值",IDC_STATIC,99,146,108,32
+    GROUPBOX        "间隔--宽度",IDC_STATIC,99,40,108,31
+    CONTROL         "",IDC_GRID_LINE_COLOR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,117,22,90,12
+    CONTROL         "倾角",IDC_GRID_DIP_TYPE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,173,125,28,10
+END
+
+IDD_INPUT_TEXT DIALOGEX 0, 0, 173, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "文本输入"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_TEXT,11,28,101,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认",IDOK,126,28,41,14
+    GROUPBOX        "请输入文本名",IDC_STATIC,5,9,113,39
+END
+
+IDD_LINE DIALOGEX 0, 0, 180, 127
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_CAPTION
+CAPTION "框线"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_LINE_STYLE,11,58,75,231,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "预览",IDC_STATIC,93,9,80,68
+    CONTROL         "",IDC_LINE_PREVIEW,"Static",SS_WHITERECT,98,23,70,47
+    EDITTEXT        IDC_LINE_WIDTH,11,96,74,13,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_LINE_WIDTH_SPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,74,96,11,14
+    GROUPBOX        "颜色",IDC_STATIC,6,9,85,31
+    GROUPBOX        "风格",IDC_STATIC,6,46,85,31
+    GROUPBOX        "宽度",IDC_STATIC,6,84,85,31
+    CONTROL         "",IDC_LINE_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,11,
+                    22,74,12
+    GROUPBOX        "对象名",IDC_STATIC,94,84,79,31
+    EDITTEXT        IDC_OBJNAME,99,97,69,13,ES_AUTOHSCROLL
+END
+
+IDD_LINELIST DIALOGEX 0, 0, 188, 157
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "框线"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "对象",IDC_STATIC,11,13,19,11
+    COMBOBOX        IDC_LINE_ITEM,12,25,73,266,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "颜色",IDC_STATIC,12,46,23,10
+    LTEXT           "风格",IDC_STATIC,12,79,19,10
+    COMBOBOX        IDC_LINE_STYLE,12,91,73,212,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "宽度",IDC_STATIC,12,114,27,10
+    EDITTEXT        IDC_LINE_WIDTH,12,125,72,13,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_LINE_WIDTH_SPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,42,111,12,14
+    GROUPBOX        "预览",IDC_STATIC,92,13,90,125
+    CONTROL         "",IDC_LINE_PREVIEW,"Static",SS_WHITERECT,98,25,77,107
+    CONTROL         "",IDC_LINE_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,12,
+                    58,72,13
+END
+
+IDD_MIN_FONT DIALOGEX 0, 0, 202, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_CHILD | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "文字"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "对象",IDC_STATIC,6,10,16,11
+    COMBOBOX        IDC_ITEM,24,7,176,160,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "内容",IDC_STATIC,6,27,17,11
+    EDITTEXT        IDC_TEXT,24,25,175,44,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "字体",IDC_STATIC,5,77,16,11
+    COMBOBOX        IDC_FONT,24,74,76,252,CBS_DROPDOWN | CBS_OWNERDRAWFIXED | 
+                    CBS_AUTOHSCROLL | CBS_SORT | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "颜色",IDC_STATIC,108,77,16,12
+    LTEXT           "大小",IDC_STATIC,5,96,17,11
+    COMBOBOX        IDC_FONT_SIZE,24,93,76,283,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "风格",IDC_STATIC,108,96,16,12
+    COMBOBOX        IDC_FONT_STYLE,128,94,71,60,CBS_SIMPLE | CBS_AUTOHSCROLL | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "样例",IDC_STATIC,5,111,118,51
+    CONTROL         "",IDC_HSAMPRECT,"Static",SS_WHITERECT,9,123,109,34
+    CONTROL         "",IDC_VSAMPRECT,"Static",SS_WHITERECT | NOT WS_VISIBLE,
+                    43,120,40,38
+    CONTROL         "垂直",IDC_ROTATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    128,153,41,10
+    CONTROL         "",IDC_FOREGROUND,"Button",BS_OWNERDRAW | WS_TABSTOP,128,
+                    74,71,14
+END
+
+IDD_PLOT_DEPTH DIALOGEX 0, 0, 173, 67
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "深度"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PLOT_STDEP,49,23,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOT_ENDEP,49,37,51,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "取消",IDCANCEL,117,35,48,14
+    DEFPUSHBUTTON   "确认",IDOK,117,15,48,14
+    LTEXT           "结束深度",IDC_STATIC,14,40,35,11
+    GROUPBOX        "深度设置",IDC_STATIC,6,7,106,50
+    LTEXT           "起始深度",IDC_STATIC,14,25,33,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FONTTYPE            BITMAP                  "res\\font.bmp"
+LINE1                   BITMAP                  "Res\\LINE1.BMP"
+LINE2                   BITMAP                  "res\\LINE2.BMP"
+LINE3                   BITMAP                  "res\\LINE3.BMP"
+LINE4                   BITMAP                  "res\\LINE4.BMP"
+CORLTH1                 BITMAP                  "RES\\CORLTH1.BMP"
+CORLTH2                 BITMAP                  "RES\\CORLTH2.BMP"
+CORLTH3                 BITMAP                  "RES\\CORLTH3.BMP"
+CORLTH4                 BITMAP                  "RES\\CORLTH4.BMP"
+CORLTH5                 BITMAP                  "RES\\CORLTH5.BMP"
+CORLTH6                 BITMAP                  "RES\\CORLTH6.BMP"
+CORLTH7                 BITMAP                  "RES\\CORLTH7.BMP"
+CORLTH8                 BITMAP                  "RES\\CORLTH8.BMP"
+CORLTH9                 BITMAP                  "RES\\CORLTH9.BMP"
+CORLTH10                BITMAP                  "RES\\CORLTH10.BMP"
+CORLTH11                BITMAP                  "RES\\CORLTH11.BMP"
+CORLTH12                BITMAP                  "RES\\CORLTH12.BMP"
+CORLTH13                BITMAP                  "RES\\CORLTH13.BMP"
+CORLTH14                BITMAP                  "RES\\CORLTH14.BMP"
+CORLTH15                BITMAP                  "RES\\CORLTH15.BMP"
+CORLTH16                BITMAP                  "RES\\CORLTH16.BMP"
+CORLTH17                BITMAP                  "RES\\CORLTH17.BMP"
+CORLTH18                BITMAP                  "RES\\CORLTH18.BMP"
+CORLTH19                BITMAP                  "RES\\CORLTH19.BMP"
+CORLTH20                BITMAP                  "RES\\CORLTH20.BMP"
+CORLTH21                BITMAP                  "RES\\CORLTH21.BMP"
+CORLTH22                BITMAP                  "RES\\CORLTH22.BMP"
+CORLTH23                BITMAP                  "RES\\CORLTH23.BMP"
+CORLTH24                BITMAP                  "RES\\CORLTH24.BMP"
+CORLTH25                BITMAP                  "RES\\CORLTH25.BMP"
+CORLTH26                BITMAP                  "RES\\CORLTH26.BMP"
+CORLTH27                BITMAP                  "RES\\CORLTH27.BMP"
+CORLTH28                BITMAP                  "RES\\CORLTH28.BMP"
+CORLTH29                BITMAP                  "RES\\CORLTH29.BMP"
+CORLTH30                BITMAP                  "RES\\CORLTH30.BMP"
+CORLTH31                BITMAP                  "RES\\CORLTH31.BMP"
+CORLTH32                BITMAP                  "RES\\CORLTH32.BMP"
+IDB_ICON                BITMAP                  "res\\report1.bmp"
+IDB_ICOND               BITMAP                  "res\\icon1.bmp"
+IDB_REPORT              BITMAP                  "res\\bitmap1.bmp"
+IDB_REPORTD             BITMAP                  "res\\bmp00001.bmp"
+COREOG1                 BITMAP                  "RES\\COREOG1.BMP"
+COREOG2                 BITMAP                  "RES\\COREOG2.BMP"
+COREOG3                 BITMAP                  "RES\\COREOG3.BMP"
+COREOG4                 BITMAP                  "RES\\COREOG4.BMP"
+COREOG5                 BITMAP                  "RES\\COREOG5.BMP"
+COREOG6                 BITMAP                  "RES\\COREOG6.BMP"
+COREOG7                 BITMAP                  "RES\\COREOG7.BMP"
+CORLTH33                BITMAP                  "res\\corlth33.bmp"
+LINE5                   BITMAP                  "res\\line6.bmp"
+LINE6                   BITMAP                  "res\\line7.bmp"
+LINE7                   BITMAP                  "res\\line8.bmp"
+LINE8                   BITMAP                  "res\\line9.bmp"
+IDB_BITMAP1             BITMAP                  "RES\\LITH8.BMP"
+LINE9                   BITMAP                  "res\\bmp00002.bmp"
+LINE10                  BITMAP                  "res\\line10.bmp"
+LINE11                  BITMAP                  "res\\line11.bmp"
+LINE12                  BITMAP                  "res\\line12.bmp"
+LINE13                  BITMAP                  "res\\line13.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MIN_FONT DLGINIT
+BEGIN
+    IDC_FONT_STYLE, 0x403, 5, 0
+0xfdd5, 0xa3b3, "\000" 
+    IDC_FONT_STYLE, 0x403, 5, 0
+0xe3c7, 0xb1d0, "\000" 
+    IDC_FONT_STYLE, 0x403, 5, 0
+0xd3bc, 0xd6b4, "\000" 
+    IDC_FONT_STYLE, 0x403, 9, 0
+0xd3bc, 0xd6b4, 0xe3c7, 0xb1d0, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FILL_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_GRID, DIALOG
+    BEGIN
+        RIGHTMARGIN, 208
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_INPUT_TEXT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_LINE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_LINELIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_MIN_FONT, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 200
+        BOTTOMMARGIN, 169
+        HORZGUIDE, 63
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "四川石油测井公司"
+            VALUE "FileVersion", "1, 0, 0, 0"
+            VALUE "InternalName", "绘图基本库 1.0"
+            VALUE "Language", "中文(简体)"
+            VALUE "LegalCopyright", "Copyright 1999 2000 2001"
+            VALUE "OriginalFilename", "PLOT.DLL"
+            VALUE "ProductName", "绘图基本库"
+            VALUE "ProductVersion", "1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_DEPTH_ERROR         "起始深度必须小于结束深度"
+    IDS_DEPTHSCALE_BIGFIVE  "深度比例必须大于5"
+    IDS_NOT_TEMPLATEFILE    "%1\n不是模板文件,文件格式错误"
+    IDS_INITIPATH_ERROR     "初始化目录失败"
+    IDS_NO_TEMPLATEFILE     "模板文件%1 不存在\n打开绘图文件"
+    IDS_INVOKECOMMAND_FAILED "InvokeCommand failed!"
+    IDS_SHELL_SAMPLE        "Shell Extension Sample"
+    IDS_PRINTER_ERROR       "不能产生打印DC!"
+    IDS_NULL_INPUT          "无效的输入数字"
+    IDS_ERROR_DIMENSION     "无效的尺寸大小"
+    IDS_TEMPLATE_NAME       "模板名称"
+    IDS_TEMPLATE_DES        "说明"
+    IDS_TEMPLATE_PATH       "路径"
+    IDS_DEPTHTHINLINE       "深度细线"
+    IDS_DEPTHMIDLINE        "深度中线"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEPTHBOLDLINE       "深度粗线"
+    IDS_ZERTHINLINE         "刻度细线"
+    IDS_ZERBOLDLINE         "刻度粗线"
+    IDS_ITALICBOLD          "加粗倾斜"
+    IDS_BOLD                "加粗"
+    IDS_ITALIC              "倾斜"
+    IDS_NORMAL              "正常"
+    IDS_EMPTY               "空"
+    IDS_SOLID               "实心"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+CG_IDR_POPUP_SELECT_DIR MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Lar&ge Icons",                MN_LARGEICONS
+        MENUITEM "S&mall Icons",                MN_SMALLICONS
+        MENUITEM "&List",                       MN_LIST
+        MENUITEM "&Report",                     MN_REPORT
+    END
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\Plot.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

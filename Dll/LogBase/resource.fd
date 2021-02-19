@@ -1,0 +1,21 @@
+!MS$FREEFORM
+! Microsoft Developer Studio generated include file.
+! Used by LogBase.rc
+!
+      integer, parameter :: IDC_ADD                         = 503
+      integer, parameter :: IDC_EDIT                        = 504
+      integer, parameter :: IDC_DELETE                      = 805
+      integer, parameter :: IDD_ADDFIELD                    = 1000
+      integer, parameter :: IDC_LENGTH_STATIC               = 1000
+      integer, parameter :: IDC_DECIMALS_STATIC             = 1001
+      integer, parameter :: IDD_DIALOG_SETFILTER            = 1002
+      integer, parameter :: IDC_TYPE                        = 1003
+      integer, parameter :: IDD_MEMO_EDITOR                 = 1003
+      integer, parameter :: IDC_TEXT                        = 1004
+      integer, parameter :: IDD_STRUCTURE                   = 1004
+      integer, parameter :: IDC_EDIT1                       = 1005
+      integer, parameter :: IDC_COMBO1                      = 1006
+      integer, parameter :: IDC_NAME                        = 1318
+      integer, parameter :: IDC_LENGTH                      = 1319
+      integer, parameter :: IDC_DECIMALS                    = 1320
+      integer, parameter :: IDC_FIELDS                      = 1402

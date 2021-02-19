@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FileFtp - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP10B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Release/FileFtp.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\GeoReveal\Dll\FileFtp\RemoteFile.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP10B.tmp"" 
+Creating temporary file "C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP10C.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"E:\GeoReveal\LinkLib/FileFtp.pdb" /machine:I386 /def:".\FileFtp.def" /out:"d:\测井解释平台\System\FileFtp.dll" /implib:"E:\GeoReveal\LinkLib/FileFtp.lib" /libpath:"..\..\LinkLib" 
+.\Release\AutoFlag.obj
+.\Release\deferWndMove.obj
+.\Release\DlgUnits.obj
+.\Release\driveinfo.obj
+.\Release\EnCommandLineInfo.obj
+.\Release\enedit.obj
+.\Release\fileedit.obj
+.\Release\FileFtp.obj
+.\Release\FILEMISC.OBJ
+.\Release\FolderDialog.obj
+.\Release\HotTracker.obj
+.\Release\ProgressDlg.obj
+.\Release\RCCtrlParser.obj
+.\Release\RemoteFile.obj
+.\Release\RemoteFileDialog.obj
+.\Release\RuntimeDlg.obj
+.\Release\ServerDlg.obj
+.\Release\StdAfx.obj
+.\Release\Subclass.obj
+.\Release\SysImageList.obj
+.\Release\Themed.obj
+.\Release\WinClasses.obj
+.\Release\FileFtp.res
+]
+Creating command line "link.exe @"C:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP10C.tmp""
+<h3>Output Window</h3>
+Compiling...
+RemoteFile.cpp
+Linking...
+   Creating library E:\GeoReveal\LinkLib/FileFtp.lib and object E:\GeoReveal\LinkLib/FileFtp.exp
+
+
+
+<h3>Results</h3>
+FileFtp.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

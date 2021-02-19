@@ -1,0 +1,9 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by PreView.rc
+//
+#define HIDC_BOTTOM_SPACE               0x80f3045a    // IDD_PAGE_SETUP
+#define HIDC_LEFT_SPACE                 0x80f30456    // IDD_PAGE_SETUP
+#define HIDC_PAGE_WIDTH                 0x80f3045b    // IDD_PAGE_SETUP
+#define HIDC_RIGHT_SPACE                0x80f30458    // IDD_PAGE_SETUP
+#define HIDC_STATIC_LEFT_SPACE          0x80f304d3    // IDD_PAGE_SETUP
+#define HIDC_TOP_SPACE                  0x80f30459    // IDD_PAGE_SETUP

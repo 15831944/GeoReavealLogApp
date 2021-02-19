@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GeoMath - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\À¶Ìì°×ÔÆ\LOCALS~1\Temp\RSP114.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Release/GeoMath.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\GeoReveal\Dll\GeoMath\DIPCalculate.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\À¶Ìì°×ÔÆ\LOCALS~1\Temp\RSP114.tmp"" 
+Creating temporary file "C:\DOCUME~1\À¶Ìì°×ÔÆ\LOCALS~1\Temp\RSP115.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\LinkLib/GeoMath.pdb" /machine:I386 /def:".\GeoMath.def" /out:"D:\²â¾®½âÊÍÆ½Ì¨\System\GeoMath.dll" /implib:"..\..\LinkLib/GeoMath.lib" 
+.\Release\DIPCalculate.obj
+.\Release\FitCircle.obj
+.\Release\GeoMath.obj
+.\Release\Gradient.obj
+.\Release\Integrate.obj
+.\Release\MathString.obj
+.\Release\StdAfx.obj
+.\Release\StringResolution.obj
+.\Release\SysDisk.obj
+.\Release\GeoMath.res
+]
+Creating command line "link.exe @"C:\DOCUME~1\À¶Ìì°×ÔÆ\LOCALS~1\Temp\RSP115.tmp""
+<h3>Output Window</h3>
+Compiling...
+DIPCalculate.cpp
+Linking...
+   Creating library ..\..\LinkLib/GeoMath.lib and object ..\..\LinkLib/GeoMath.exp
+
+
+
+<h3>Results</h3>
+GeoMath.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

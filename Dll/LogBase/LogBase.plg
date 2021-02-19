@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LogBase - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/LogBase.res" /d "NDEBUG" /d "_AFXDLL" "F:\GeoReveal\Dll\LogBase\LogBase.rc"" 
+Creating temporary file "D:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP167.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Release/LogBase.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\GeoReveal\Dll\LogBase\AddFieldDlg.cpp"
+"F:\GeoReveal\Dll\LogBase\Database.cpp"
+"F:\GeoReveal\Dll\LogBase\DialogResize.cpp"
+"F:\GeoReveal\Dll\LogBase\ExportFileDialog.cpp"
+"F:\GeoReveal\Dll\LogBase\LogBase.cpp"
+"F:\GeoReveal\Dll\LogBase\MemoEditorDlg.cpp"
+"F:\GeoReveal\Dll\LogBase\ProgDlg.cpp"
+"F:\GeoReveal\Dll\LogBase\SetFilterDlg.cpp"
+"F:\GeoReveal\Dll\LogBase\StructureDlg.cpp"
+]
+Creating command line "cl.exe @"D:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP167.tmp"" 
+Creating temporary file "D:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP168.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Release/LogBase.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\GeoReveal\Dll\LogBase\StdAfx.cpp"
+]
+Creating command line "cl.exe @"D:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP168.tmp"" 
+Creating temporary file "D:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP169.tmp" with contents
+[
+FIDio.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"F:\GeoReveal\LinkLib/LogBase.pdb" /machine:I386 /def:".\LogBase.def" /out:"E:\测井解释平台\System\LogBase.dll" /implib:"F:\GeoReveal\LinkLib/LogBase.lib" /libpath:"..\..\LinkLib" 
+.\Release\AddFieldDlg.obj
+.\Release\Database.obj
+.\Release\DialogResize.obj
+.\Release\ExportFileDialog.obj
+.\Release\LogBase.obj
+.\Release\MemoEditorDlg.obj
+.\Release\ProgDlg.obj
+.\Release\SetFilterDlg.obj
+.\Release\StdAfx.obj
+.\Release\StructureDlg.obj
+.\Release\LogBase.res
+]
+Creating command line "link.exe @"D:\DOCUME~1\赵中明\LOCALS~1\Temp\RSP169.tmp""
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AddFieldDlg.cpp
+Database.cpp
+DialogResize.cpp
+ExportFileDialog.cpp
+LogBase.cpp
+MemoEditorDlg.cpp
+ProgDlg.cpp
+SetFilterDlg.cpp
+StructureDlg.cpp
+Generating Code...
+Linking...
+   Creating library F:\GeoReveal\LinkLib/LogBase.lib and object F:\GeoReveal\LinkLib/LogBase.exp
+
+
+
+<h3>Results</h3>
+LogBase.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
